@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>ข้อมูลรายชื่อคณะกรรมการสัมพันธ์</title>
 </head>
 <style>
     table {
@@ -57,14 +58,25 @@
         margin: 0 auto;
         font-size: 22px;
     }
+    .button2 {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+        outline: none;
+        color: white;
+        background-color: RebeccaPurple;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 7px #999;
+        margin-left: 80%;
+    }
 </style>
 
 <body>
     <a href="../admin.php">ย้อนกลับ</a>
     <br>
     <h1 align='center'>ข้อมูลรายชื่อคณะกรรมการสัมพันธ์</h1>
-    <br>
-    <a href="createname.php">เพิ่มข้อมูลรายชื่อคณะกรรมการสัมพันธ์</a>
+    <a href="createname.php"><button class="button2">เพิ่มข้อมูลรายชื่อคณะกรรมการสัมพันธ์</button></a> <br>
     &nbsp; &nbsp;
 
 

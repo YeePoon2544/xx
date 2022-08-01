@@ -3,21 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>แก้ไขข้อมูลไฟล์งานการประชุม</title>
+    <title>แก้ไขข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</title>
 </head>
 <?php
 
 //ไอดีที่เราทำการดึงมาเพื่อนำมาแก้ไข
-
 $ID = $_GET['ID'];
 $objDB = mssql_select_db("work1");
-$data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
+$data = mssql_query("SELECT * FROM labor WHERE ID={$ID}")
     or die(mssql_error());
 
-
 ?>
-
 <style>
+    #add {
+        background-color: lightPink;
+        width: 300px;
+        padding: 25px;
+        border: 20px solid HotPink;
+        margin: 25px;
+        text-align: left;
+    }
+
     input[type=submit] {
         background-color: #fa4848f7;
         color: white;
@@ -27,50 +33,34 @@ $data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
         cursor: pointer;
     }
 
-
-
     input[type=submit]:hover {
         background-color: #49c31d;
     }
-
-    #ass {
-        background-color: lightgrey;
-        width: 300px;
-        padding: 25px;
-        border: 20px solid saddlebrown;
-        margin: 25px;
-        text-align: left;
-    }
-
 </style>
 
 <body>
-    <a href="indexlaw.php">ย้อนกลับ</a>
+    <a href="indexlabor.php">ย้อนกลับ</a>
     <?php
     while ($info = mssql_fetch_array($data)) {
         $image = iconv("utf-8", "tis-620", $info['Image']);
         $details = iconv("tis-620", "utf-8", $info['Details']);
         $filename = iconv("tis-620", "utf-8", $info['Filename']);
     ?>
-        <form action="updatelaw.php?ID=<?php echo $info['ID']; ?>" method="POST" enctype="multipart/form-data">
+        <form action="updatelabor.php?ID=<?php echo $info['ID']; ?>" method="POST" enctype="multipart/form-data">
             <div align="center">
-                <h2>แก้ไขข้อมูลกฏหมายแรงงานรัฐวิสาหกิจ</h2>
-
-                <div id="ass">
+                <h2>แก้ไขข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</h2>
+                <div id="add">
                     <p>
                         <label for="text">รหัส</label>
                     </p>
-
                     <p>
                         <input type="text" name="ID" value="<?php echo $ID; ?>" />
                     </p>
-
                     <p>
                         <label for="text">รูปภาพ</label>
                     </p>
-
                     <p>
-                        <input type="file" name="image" value="<?php echo $image; ?>" /><br />
+                        <input type="file" name="image" accept="" /><br />
                     </p>
                     <p>
                         <label for="input-fullname">รายละเอียด</label>
@@ -82,17 +72,18 @@ $data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
 
 
                     <p>
-                        <label for="text">ไฟล์กฏหมายแรงงานรัฐวิสาหกิจ</label>
+                        <label for="text">ไฟล์พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</label>
                     </p>
 
 
                     <p>
-                        <input type="file" name="filename" value="<?php echo $filename; ?>" /><br />
+                        <input type="file" name="filename" accept="" /><br />
                     </p>
 
                     <p>
                         <input type="submit" name="submit" value="Upload" />
                     </p>
+
                 </div>
             </div>
         </form>

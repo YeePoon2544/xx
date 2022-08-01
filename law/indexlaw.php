@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>ข้อมูลเกี่ยวกับกฏหมายแรงงานรัฐวิสาหกิจ</title>
 </head>
 
 <style>
@@ -92,6 +93,7 @@ $data = mssql_query("SELECT * FROM law");
         <td>รหัส</td>
         <td>รูปภาพ</td>
         <td>รายละเอียด</td>
+        <td>ชื่อไฟล์</td>
         <td>Edit</td>
         <td>Delete</td>
     </tr>
@@ -100,14 +102,16 @@ $data = mssql_query("SELECT * FROM law");
     while ($info = mssql_fetch_array($data)) {
         $image = iconv("tis-620", "utf-8", $info['Image']);
         $details = iconv("tis-620", "utf-8", $info['Details']);
+        $filename = iconv("tis-620", "utf-8", $info['Filename']);
 
     ?>
         <tr align="center">
             <td><?php echo $info['ID']; ?></td>
             <td><?php echo $image; ?></td>
             <td><?php echo $details; ?></td>
-            <td><a href='editname.php?ID=<?php echo $info['ID']; ?>'><button class="button">Edit</button></a></td>
-            <td><a href='deletename.php?ID=<?php echo $info['ID']; ?>'><button class="button1">delete</button></a></td>
+            <td><?php echo $filename; ?></td>
+            <td><a href='editlaw.php?ID=<?php echo $info['ID']; ?>'><button class="button">Edit</button></a></td>
+            <td><a href='deletelaw.php?ID=<?php echo $info['ID']; ?>'><button class="button1">delete</button></a></td>
         </tr>
     <?php } ?>
 </table>

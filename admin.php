@@ -148,6 +148,23 @@
         margin-top: 25px;
     }
 
+    .button9 {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #9999FF;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-left: 33%;
+        margin-top: 25px;
+    }
+
     h1 {
         border: 8px solid lightcoral;
         width: 150px;
@@ -167,8 +184,8 @@
 
 <body>
     <br>
-    <h1 align='center'>จัดการข้อมูล</h1>
-    <br>
+    <h1 align='center'>จัดการข้อมูลคณะกรรมการสัมพันธ์</h1>
+
     <table align="center">
         <tr>
             <td><a href="./name/indexname.php"><button class="button">จัดการข้อมูลรายชื่อคณะกรรมการสัมพันธ์</button></a></td>
@@ -183,16 +200,19 @@
             <td><a href="./meet/index.php"><button class="button4">จัดการข้อมูลเกี่ยวกับรายงานการประชุม</button></a></td>
         </tr>
         <tr>
-            <td><a href="#"><button class="button5">จัดการข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</button></a></td>
+            <td><a href="./labor/indexlabor.php"><button class="button5">จัดการข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</button></a></td>
         </tr>
         <tr>
             <td><a href="./law/indexlaw.php"><button class="button6">จัดการข้อมูลกฎหมายแรงงานรัฐวิสาหกิจที่เกี่ยวข้อง</button></a></td>
         </tr>
         <tr>
-            <td><a href="#"><button class="button7">จัดการข้อมูลระเบียบหรือข้อบังคับ วว.</button></a></td>
+            <td><a href="./imperative/indeximperative.php"><button class="button7">จัดการข้อมูลระเบียบหรือข้อบังคับ วว.</button></a></td>
         </tr>
         <tr>
-            <td><a href="#"><button class="button8">จัดการข้อมูลเกี่ยวกับถาม-ตอบ</button></a></td>
+            <td><a href="./comment/indexcomment.php"><button class="button8">จัดการข้อมูลเกี่ยวกับยื่นคำร้อง</button></a></td>
+        </tr>
+        <tr>
+            <td><a href="#"><button class="button9">จัดการข้อมูลเกี่ยวกับถาม-ตอบ</button></a></td>
         </tr>
 
     </table>

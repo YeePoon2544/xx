@@ -3,10 +3,18 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>เพิ่มข้อมูลไฟล์</title>
+    <title>เพิ่มข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</title>
 </head>
-
 <style>
+    #add {
+        background-color: lightPink;
+        width: 300px;
+        padding: 25px;
+        border: 20px solid HotPink ;
+        margin: 25px;
+        text-align: left;
+    }
+
     input[type=submit] {
         background-color: #fa4848f7;
         color: white;
@@ -19,35 +27,43 @@
     input[type=submit]:hover {
         background-color: #49c31d;
     }
-
-    div {
-        background-color: lightgrey;
-        width: 300px;
-        padding: 25px;
-        border: 25px solid seagreen;
-        margin: 25px;
-    }
 </style>
 
 <body>
-    <form action="#" method="post">
-        <div>
-            <p>
-                <label for="input-fullname">รายละเอียด</label>
-            </p>
+    <a href="indexlabor.php">ย้อนกลับ</a>
+    <form action="storelabor.php" method="POST" enctype="multipart/form-data">
+        <div align="center">
+            <h2>เพิ่มข้อมูลไฟล์พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</h2>
+            <div id="add">
+                <p>
+                    <label for="text">รูปภาพ</label>
+                </p>
+                <p>
+                    <input type="file" name="image" accept="" /><br />
+                </p>
+                <p>
+                    <label for="input-fullname">รายละเอียด</label>
+                </p>
 
-            <p>
-                <input id="input-fullname" type="text" name="details" />
-            </p>
+                <p>
+                    <input type="text" name="details" />
+                </p>
 
-                <label for="input-fullname">ไฟล์งาน </label>
-            </p>
 
-            <p><input type="file" name="image" accept="" /><br />
-            </p>
-            <p>
-                <input type="submit" name="submit" value="submit" />
-            </p>
+                <p>
+                    <label for="text">ไฟล์พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</label>
+                </p>
+
+
+                <p>
+                    <input type="file" name="filename" accept="" /><br />
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" value="submit" />
+                </p>
+
+            </div>
         </div>
     </form>
 </body>

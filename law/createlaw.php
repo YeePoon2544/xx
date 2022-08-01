@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>เพิ่มข้อมูลกฏหมายแรงงานรัฐวิสาหกิจ</title>
-
+    <title>เพิ่มข้อมูลไฟล์งานการประชุม</title>
 </head>
 
 <style>
@@ -33,34 +32,40 @@
 
 <body>
     <a href="indexlaw.php">ย้อนกลับ</a>
-    <form action="storelaw.php" method="POST" enctype="multipart/form-data"></form>
-    <div align="center">
-        <h2>เพิ่มข้อมูลกฏหมายแรงงานรัฐวิสาหกิจ</h2>
-        <div id="add">
-            <p>
-                <label for="text">รูปภาพ</label>
-            </p>
+    <form action="storelaw.php" method="POST" enctype="multipart/form-data">
+        <div align="center">
+            <h2>เพิ่มข้อมูลไฟล์กฏหมายแรงงานรัฐวิสาหกิจ</h2>
+            <div id="add">
+                <p>
+                    <label for="text">รูปภาพ</label>
+                </p>
+                <p>
+                    <input type="file" name="image" accept="" /><br />
+                </p>
+                <p>
+                    <label for="input-fullname">รายละเอียด</label>
+                </p>
 
-            <p>
-                <input type="file" name="image"><br>
-            </p>
+                <p>
+                    <input type="text" name="details" />
+                </p>
 
-            <p>
-                <label for="text">รายละเอียด</label>
-            </p>
 
-            <p>
-                <input type="text" name="details" />
-            </p>
+                <p>
+                    <label for="text">ไฟล์กฏหมายแรงงานรัฐวิสาหกิจ</label>
+                </p>
 
-            <p>
-                <input type="submit" name="submit" value="submit" />
-            </p>
+
+                <p>
+                    <input type="file" name="filename" accept="" /><br />
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" value="submit" />
+                </p>
+            </div>
         </div>
-      
-    </div>
     </form>
-
 </body>
 
 </html>
