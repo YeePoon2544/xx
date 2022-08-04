@@ -191,10 +191,10 @@
             <td><a href="./name/indexname.php"><button class="button">จัดการข้อมูลรายชื่อคณะกรรมการสัมพันธ์</button></a></td>
         <tr>
         <tr>
-            <td><a href="#"><button class="button2">จัดการข้อมูลข่าวสาร</button></a></td>
+            <td><a href="./news2/indexnews2.php"><button class="button2">จัดการข้อมูลข่าวสาร</button></a></td>
         </tr>
         <tr>
-            <td><a href="#"><button class="button3">จัดการข้อมูลตารางนัดการประชุม</button></a></td>
+            <td><a href="./appointment/indexappointment.php"><button class="button3">จัดการข้อมูลตารางนัดการประชุม</button></a></td>
         </tr>
         <tr>
             <td><a href="./meet/index.php"><button class="button4">จัดการข้อมูลเกี่ยวกับรายงานการประชุม</button></a></td>
@@ -212,7 +212,7 @@
             <td><a href="./comment/indexcomment.php"><button class="button8">จัดการข้อมูลเกี่ยวกับยื่นคำร้อง</button></a></td>
         </tr>
         <tr>
-            <td><a href="#"><button class="button9">จัดการข้อมูลเกี่ยวกับถาม-ตอบ</button></a></td>
+            <td><a href="./qa/indexqa.php"><button class="button9">จัดการข้อมูลเกี่ยวกับถาม-ตอบ</button></a></td>
         </tr>
 
     </table>

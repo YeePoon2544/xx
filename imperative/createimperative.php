@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>เพิ่มข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</title>
+    <title>เพิ่มข้อมูลระเบียบและข้อบังคับของ วว.</title>
 </head>
 <style>
     #add {
-        background-color: lightPink;
+        background-color: Plum;
         width: 300px;
         padding: 25px;
-        border: 20px solid HotPink ;
+        border: 20px solid DarkOrchid ;
         margin: 25px;
         text-align: left;
     }
@@ -30,10 +30,10 @@
 </style>
 
 <body>
-    <a href="indexlabor.php">ย้อนกลับ</a>
-    <form action="storelabor.php" method="POST" enctype="multipart/form-data">
+    <a href="indeximperative.php">ย้อนกลับ</a>
+    <form action="storeimperative.php" method="POST" enctype="multipart/form-data">
         <div align="center">
-            <h2>เพิ่มข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</h2>
+            <h2>เพิ่มข้อมูลระเบียบและข้อบังคับของ วว.</h2>
             <div id="add">
                 <p>
                     <label for="text">รูปภาพ</label>
@@ -51,7 +51,7 @@
 
 
                 <p>
-                    <label for="text">ไฟล์พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</label>
+                    <label for="text">ไฟล์ระเบียบและข้อบังคับของ วว.</label>
                 </p>
 
 
