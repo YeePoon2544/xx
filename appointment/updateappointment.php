@@ -1,5 +1,12 @@
 <?php
 
+//ไอดีที่เราทำการดึงมาเพื่อนำมาแก้ไข
+
+$objDB = mssql_select_db("work1");
+
+
+$ID = $_GET['ID'];
+
 $meetmonth = iconv("utf-8", "tis-620", $_POST['meetmonth']);
 $appointment = iconv("utf-8", "tis-620", $_POST['appointment']);
 $date = iconv("utf-8", "tis-620", $_POST['date']);
@@ -11,13 +18,11 @@ $location = iconv("utf-8", "tis-620", $_POST['location']);
 $note = iconv("utf-8", "tis-620", $_POST['note']);
 
 
-$objDB = mssql_select_db("work1");
-$strSQL = "INSERT INTO appointment";
-$strSQL .= "(meetmonth,appointment,date,time,day,invite,send,location,note)";
-$strSQL .= "VALUES";
-$strSQL .= "('" . $meetmonth . "','" . $appointment . "','" . $date . "','" . $time . "',
-'" . $day . "','" . $invite . "','" . $send . "','" . $location . "','" . $note . "')";
-$strSQL .= mssql_query($strSQL);
+$sql = ("UPDATE appointment SET Meetmonth='{$meetmonth}', Appointment='{$appointment}', Date='{$date}',
+ Time='{$time}', Day='{$day}', Invite='{$invite}', Send='{$send}', Location='{$location}', Note='{$note}'WHERE ID={$ID}");
+
+// echo $sql."<br>";
+$objQuery = mssql_query($sql);
 
 
 ?>

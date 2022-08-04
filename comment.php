@@ -1,16 +1,3 @@
-<?php
-
-$subject = iconv("utf-8", "tis-620", $_POST['subject']);
-$story = iconv("utf-8", "tis-620", $_POST['story']);
-$objDB = mssql_select_db("work1");
-$strSQL = "INSERT INTO comment ";
-$strSQL .= "(subject,story)";
-$strSQL .= "VALUES";
-$strSQL .= "('" . $subject . "','" . $story . "')";
-$objQuery = mssql_query($strSQL);
-
-?>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,7 +61,7 @@ $objQuery = mssql_query($strSQL);
 </head>
 
 <body class="bodydy">
-  <form action="#" method="post">
+  <form action="./comment/storecomment.php" method="post">
 
     <div class="container">
       <h3 class="centered">ยื่นข้อร้องเรียน</h3><br>

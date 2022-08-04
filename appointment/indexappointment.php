@@ -8,11 +8,11 @@
 <style>
     table {
         border-collapse: collapse;
-        width: 86%;
+        width: 88%;
     }
 
     td {
-        border: 5px solid  #F898A4;
+        border: 5px solid #F898A4;
     }
 
     .button {
@@ -70,13 +70,25 @@
         margin-left: 2%;
 
     }
+
+    footer {
+        width: 70%;
+        background-color: #CC3333;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 15%;
+
+
+    }
+    
 </style>
 
 <body>
     <a href="../admin.php">ย้อนกลับ</a>
     <br>
     <h1>แผนการประชุมคณะกรรมการกิจการสัมพันธ์ ประจำปีงบประมาณ 2565</h1><br>
-    <a hash="#"><button class="button">เพิ่มข้อมูลแผนการประชุมคณะกรรมการกิจการสัมพันธ์</button></a><br>
+    <a href="createappointment.php"><button class="button">เพิ่มข้อมูลแผนการประชุมคณะกรรมการกิจการสัมพันธ์</button></a><br>
     <br>
 </body>
 <?php
@@ -85,16 +97,16 @@ $objDB = mssql_select_db("work1");
 $data = mssql_query("SELECT * FROM appointment");
 
 ?>
-<table  border=1 cellpadding=3 align="center">
+<table border=1 cellpadding=3 align="center">
     <tr align="center" bgcolor="#F3D8D1">
         <td>รหัส</td>
         <td>ประชุมประจำเดือน</td>
         <td>ครั้งที่</td>
         <td>วันที่ประชุม</td>
         <td>เวลาประชุม</td>
-        <td>เสนอวาระ</td>
-        <td>ออกหนังสือเชิญ</td>
-        <td>ส่งเอกสารประชุม</td>
+        <td>วันเสนอวาระ</td>
+        <td>วันออกหนังสือเชิญ</td>
+        <td>วันส่งเอกสารประชุม</td>
         <td>สถานที่ประชุม</td>
         <td>หมายเหตุ</td>
         <td>Edit</td>
@@ -111,7 +123,7 @@ $data = mssql_query("SELECT * FROM appointment");
         $invite = iconv("tis-620", "utf-8", $info['Invite']);
         $send = iconv("tis-620", "utf-8", $info['Send']);
         $location = iconv("tis-620", "utf-8", $info['Location']);
-        $nole = iconv("tis-620", "utf-8", $info['Nole']);
+        $note = iconv("tis-620", "utf-8", $info['Note']);
 
     ?>
         <tr align="center">
@@ -124,11 +136,13 @@ $data = mssql_query("SELECT * FROM appointment");
             <td><?php echo $invite; ?></td>
             <td><?php echo $send; ?></td>
             <td><?php echo $location; ?></td>
-            <td><?php echo $nole; ?></td>
+            <td><?php echo $note; ?></td>
             <td><a href='editappointment.php?ID=<?php echo $info['ID']; ?>'><button class="button1">Edit</button></a></td>
             <td><a href='deleteappointment.php?ID=<?php echo $info['ID']; ?>'><button class="button2">delete</button></a></td>
         </tr>
     <?php } ?>
 </table>
+<br>
+<footer>หมายเหตุ : แผนการประชุมคณะกรรมการกิจการสัมพันธ์ ประจำปีงบประมาณ 2565 อาจมีการเปลี่ยนแปลงตามมติที่ประชุม</footer>
 
 </html>
