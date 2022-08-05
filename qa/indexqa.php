@@ -74,7 +74,7 @@ $data = mssql_query("SELECT * FROM qa");
             <td><?php echo $info['ID']; ?></td>
             <td><?php echo $question; ?></td>
             <td><?php echo $answer; ?></td>
-            <td><a href='createqa.php?ID=<?php echo $info['ID']; ?>'><button class="button">คำตอบ</button></a></td>
+            <td><a href='editqa.php?ID=<?php echo $info['ID']; ?>'><button class="button">คำตอบ</button></a></td>
         </tr>
     <?php } ?>
 </table>

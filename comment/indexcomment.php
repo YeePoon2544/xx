@@ -6,13 +6,18 @@
     <title>คำขอร้องเรียน</title>
 </head>
 <style>
+    
+    body {
+        font-family: verdana;
+    }
+
     table {
         border-collapse: collapse;
         width: 80%;
     }
 
     td {
-        border: 4px solid DarkSlateBlue;
+
         padding: 8px;
     }
 
@@ -31,6 +36,15 @@
         margin: 0 auto;
         font-size: 22px;
     }
+
+    th {
+        text-align: center;
+        padding: 16px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
 </style>
 
 <body>
@@ -43,11 +57,11 @@
 $objDB = mssql_select_db("work1");
 $data = mssql_query("SELECT * FROM comment");
 ?>
-<table width=65% border=1 cellpadding=3 align="center">
+<table align="center">
     <tr align="center" bgcolor="LightSteelBlue">
-        <td>รหัส</td>
-        <td>เรื่องร้องเรียน</td>
-        <td>รายละเอียดข้อร้องเรียน</td>
+        <th>รหัส</th>
+        <th>เรื่องร้องเรียน</th>
+        <th>รายละเอียดขอร้องเรียน</th>
     </tr>
     <?php
     while ($info = mssql_fetch_array($data)) {

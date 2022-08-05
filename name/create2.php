@@ -43,10 +43,8 @@
 </style>
 
 <body>
-    <a href="indexname.php">ย้อนกลับ</a>
-    <br>
-    <br>
-    <form action="storename.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">
+
+    <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
         <h2 class="w3-center">ฟอร์มเพิ่มข้อมูลคณะกรรมการกิจการสัมพันธ์</h2>
 
         <div class="w3-row w3-section">

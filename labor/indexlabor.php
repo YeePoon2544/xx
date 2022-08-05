@@ -17,30 +17,78 @@
     }
 
     .button {
-        padding: 10px 20px;
+        padding: 10px 22px;
         font-size: 10px;
         text-align: center;
+        cursor: pointer;
         outline: none;
-        color: white;
-        background-color: GoldenRod;
+        color: #fff;
+        background-color: goldenrod;
         border: none;
         border-radius: 10px;
         box-shadow: 0 7px #999;
         margin-left: 5%;
     }
 
+    .button:hover {
+        background-color: #D5C392
+    }
+
+    .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
     .button1 {
         padding: 10px 20px;
         font-size: 10px;
         text-align: center;
+        cursor: pointer;
         outline: none;
-        color: white;
+        color: #fff;
         background-color: FireBrick;
         border: none;
         border-radius: 10px;
         box-shadow: 0 7px #999;
-        margin-left: 5%;
+        margin-left: 2%;
     }
+
+    .button1:hover {
+        background-color: #6D1919
+    }
+
+    .button1:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 15px 25px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-left: 71%;
+    }
+
+    .button2:hover {
+        background-color: #3e8e41
+    }
+
+    .button2:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+
 
     h1 {
         border: 8px solid SandyBrown;
@@ -57,19 +105,6 @@
         margin: 0 auto;
         font-size: 22px;
     }
-
-    .button2 {
-        padding: 10px 20px;
-        font-size: 15px;
-        text-align: center;
-        outline: none;
-        color: white;
-        background-color: RebeccaPurple;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 7px #999;
-        margin-left: 72%;
-    }
 </style>
 
 <body>
@@ -79,7 +114,7 @@
     <br>
     <a href="createlabor.php"><button class="button2">เพิ่มข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</button></a>
     &nbsp; &nbsp;
-    <br>  <br>
+    <br> <br>
 </body>
 
 <?php

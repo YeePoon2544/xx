@@ -6,7 +6,7 @@ $objDB = mssql_select_db("work1");
 
 $ID = $_GET['ID'];
 
-$position = iconv("utf-8", "tis-620", $_POST['Position']);
+$position = iconv("utf-8", "tis-620", $_POST['position']);
 $name = iconv("utf-8", "tis-620", $_POST['name']);
 $lastname = iconv("utf-8", "tis-620", $_POST['lastname']);
 $department = iconv("utf-8", "tis-620", $_POST['department']);

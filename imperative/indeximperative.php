@@ -16,32 +16,6 @@
         padding: 8px;
     }
 
-    .button {
-        padding: 10px 20px;
-        font-size: 10px;
-        text-align: center;
-        outline: none;
-        color: white;
-        background-color: GoldenRod;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 7px #999;
-        margin-left: 2%;
-    }
-
-    .button1 {
-        padding: 10px 20px;
-        font-size: 10px;
-        text-align: center;
-        outline: none;
-        color: white;
-        background-color: FireBrick;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 7px #999;
-        margin-left: 2%;
-    }
-
     h1 {
         border: 8px solid Salmon;
         width: 150px;
@@ -58,17 +32,76 @@
         font-size: 22px;
     }
 
-    .button2 {
-        padding: 10px 20px;
-        font-size: 15px;
+    .button {
+        padding: 10px 22px;
+        font-size: 10px;
         text-align: center;
+        cursor: pointer;
         outline: none;
-        color: white;
-        background-color: RebeccaPurple;
+        color: #fff;
+        background-color: goldenrod;
         border: none;
         border-radius: 10px;
         box-shadow: 0 7px #999;
+        margin-left: 5%;
+    }
+
+    .button:hover {
+        background-color: #D5C392
+    }
+
+    .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .button1 {
+        padding: 10px 20px;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: FireBrick;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 7px #999;
+        margin-left: 2%;
+    }
+
+    .button1:hover {
+        background-color: #6D1919
+    }
+
+    .button1:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 15px 25px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
         margin-left: 65%;
+    }
+
+    .button2:hover {
+        background-color: #3e8e41
+    }
+
+    .button2:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
     }
 </style>
 <boby>

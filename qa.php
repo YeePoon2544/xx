@@ -1,16 +1,9 @@
-<?php
+<?php 
 
-$question = iconv("utf-8", "tis-620", $_POST['question']);
-$answer = iconv("utf-8", "tis-620", $_POST['answer']);
-$objDB = mssql_select_db("work1");
-$data = mssql_query("SELECT * FROM qa");
-$strSQL = "INSERT INTO qa";
-$strSQL .= "(question,answer)";
-$strSQL .= "VALUES";
-$strSQL .= "('" . $question . "','" . $answer . "')";
-$objQuery = mssql_query($strSQL);
 
 ?>
+
+
 
 <head>
   <meta charset="utf-8">
@@ -100,7 +93,7 @@ $objQuery = mssql_query($strSQL);
 
 <body>
 
-  <form action="#" method="post">
+  <form action="./qa/storeqa.php" method="POST">
 
 
 

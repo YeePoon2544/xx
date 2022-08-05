@@ -31,13 +31,27 @@ $data = mssql_query("SELECT * FROM news WHERE ID={$ID}")
         background-color: #49c31d;
     }
 
-    #ass {
+    input[type=reset] {
+        background-color: #787A79;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=reset]:hover {
+        background-color: #656C5C;
+    }
+
+    .ass {
         background-color: lightgrey;
-        width: 250px;
+        width: 45%;
         padding: 25px;
-        border: 25px solid navy;
+        border: 20px solid saddlebrown;
         margin: 25px;
         text-align: left;
+
     }
 </style>
 
