@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <title>จัดการข้อมูลคณะกรรมการสัมพันธ์</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <style>
     body {
         padding-left: 400px;
@@ -42,8 +43,10 @@
     }
 </style>
 
+<a href="indexname.php">ย้อนกลับ</a>
+
 <body>
-    <a href="indexname.php">ย้อนกลับ</a>
+
     <br>
     <br>
     <form action="storename.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">
@@ -84,7 +87,7 @@
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px"><i class='fas fa-clone' style='font-size:36px'></i></div>
             <div class="w3-rest">
-                <input class="w3-input w3-border" name="phone" type="role" placeholder="บทบาทหน้าที่">
+                <input class="w3-input w3-border" name="role" type="role" placeholder="บทบาทหน้าที่">
             </div>
         </div>
 
@@ -96,7 +99,7 @@
         </div>
 
         <p class="w3-center">
-            <input type="submit" name="submit" value="submit" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="submit" value="Submit" />&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="reset" name="submit" value="Cancel" />
         </p>
     </form>

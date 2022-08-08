@@ -2,23 +2,25 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>คำขอร้องเรียน</title>
 </head>
 <style>
-    
-    body {
-        font-family: verdana;
-    }
-
     table {
         border-collapse: collapse;
-        width: 80%;
+        width: 70%;
+        text-align: center;
+
     }
 
-    td {
-
-        padding: 8px;
+    th {
+        background-color: IndianRed;
+        color: white;
     }
 
     h1 {
@@ -36,20 +38,9 @@
         margin: 0 auto;
         font-size: 22px;
     }
-
-    th {
-        text-align: center;
-        padding: 16px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f2f2f2
-    }
 </style>
 
 <body>
-    <a href="../admin.php">ย้อนกลับ</a>
-    <br>
     <h1 align='center'>คำขอร้องเรียน</h1>
     <br>
 </body>
@@ -57,8 +48,8 @@
 $objDB = mssql_select_db("work1");
 $data = mssql_query("SELECT * FROM comment");
 ?>
-<table align="center">
-    <tr align="center" bgcolor="LightSteelBlue">
+<table class="table table-bordered" align="center" width=65% border=1 cellpadding=4>
+    <tr align="center">
         <th>รหัส</th>
         <th>เรื่องร้องเรียน</th>
         <th>รายละเอียดขอร้องเรียน</th>

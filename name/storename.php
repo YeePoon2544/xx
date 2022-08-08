@@ -2,7 +2,7 @@
 
 $position = iconv("utf-8", "tis-620", $_POST['position']);
 $name = iconv("utf-8", "tis-620", $_POST['name']);
-$lastname = iconv("utf-8", "tis-620", $_POST['lastname']);
+$lastname = iconv("utf-8", "tis-620", $_POST['Lastname']);
 $department = iconv("utf-8", "tis-620", $_POST['department']);
 $role = iconv("utf-8", "tis-620", $_POST['role']);
 
@@ -11,6 +11,7 @@ $tmp_name = $_FILES['image']['tmp_name'];
 
 
 // echo $details."<br>";
+ 
 // echo $day."<br>";
 // echo $_FILES['image']['tmp_name']."<br>";
 // echo $_FILES['image']['name']."<br>";
@@ -29,5 +30,5 @@ move_uploaded_file($tmp_name, "../uploads/" . $_FILES['image']['name']);
 ?>
 
 <script type="text/javascript">
-    window.location = "indexname.php";
+    window.location = "../admin.php";
 </script>

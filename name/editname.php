@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>แก้ไขข้อมูลรายชื่อคณะกรรมการสัมพันธ์</title>
 </head>
 
@@ -23,6 +23,11 @@ $data = mssql_query("SELECT * FROM about WHERE ID={$ID}")
 ?>
 
 <style>
+    body {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
     input[type=submit] {
         background-color: #fa4848f7;
         color: white;
@@ -48,15 +53,6 @@ $data = mssql_query("SELECT * FROM about WHERE ID={$ID}")
     input[type=reset]:hover {
         background-color: #656C5C;
     }
-
-    .ass {
-        background-color: #C7C7BB;
-        width: 45%;
-        padding: 20px;
-        border: 17px solid #2A505A;
-        text-align: left;
-
-    }
 </style>
 
 <body>
@@ -71,80 +67,65 @@ $data = mssql_query("SELECT * FROM about WHERE ID={$ID}")
         $role = iconv("tis-620", "utf-8", $info['Role']);
     ?>
 
-        <form action="updatename.php?ID=<?php echo $info['ID']; ?>" method="POST" enctype="multipart/form-data">
+        <form action="updatename.php?ID=<?php echo $info['ID']; ?>" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">
             <br>
             <br>
             <div align="center">
                 <h2>ฟอร์มแก้ไขข้อมูลคณะกรรมการกิจการสัมพันธ์</h2>
-                <br>
-                <div align="center">
-                    <div class="ass">
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for="text">รหัส</label><br>
-                                    <input type="text" name="ID" value="<?php echo $ID; ?>" />
-                                <td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table align="center" width="700">
-                            <tr>
-                                <td>
-                                    <label for="text">ตำแหน่ง</label><br>
-                                    <input type="text" placeholder="ตำแหน่ง" name="position" value="<?php echo $position; ?>" />
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table align="center" cellpadding="2" width="700">
-                            <tr>
-                                <td>
-                                    <label for="text">ชื่อ</label><br>
-                                    <input type="text" placeholder="ชื่อ" name="name" value="<?php echo $name; ?>" />
-                                <td>
-                                    <label for="text">นามสกุล</label><br>
-                                    <input type="text" placeholder="นามสกุล" name="lastname" value="<?php echo $lastname; ?>" />
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table align="center" cellpadding="2" width="700">
-                            <tr>
-                                <td>
-                                    <label for="text">แผนก</label><br>
-                                    <select name="department" value="<?php echo $department; ?>"
-                                        <option value="-">แผนก</option>
-                                        <option value="ผู้แทนฝ่ายนายจ้าง">ผู้แทนฝ่ายนายจ้าง</option>
-                                        <option value="ผู้แทนฝ่ายลูกจ้าง">ผู้แทนฝ่ายลูกจ้าง</option>
-                                    </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td>
-                                    <label for="text">บทบาทหน้าที่</label><br>
-                                    <input type="text" placeholder="บทบาทหน้าที่" name="role"  value="<?php echo $role; ?>" />
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table align="center" cellpadding="2" width="700">
-                            <tr>
-                                <td>
-                                    <label for="text">รูปภาพ</label><br>
-                                    <input type="file" name="image" value="<?php echo $image; ?>" />
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table align="center" cellpadding="2" width="700">
-                            <tr>
-                                <td>
-                                    <input type="submit" name="submit" value="Upload" />&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="reset" name="submit" value="Cancel" />
-                                </td>
 
-                            </tr>
-                        </table>
+                <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:50px"><i class='fas fa-edit' style='font-size:36px'></i></div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="id" value="<?php echo $ID; ?>" />
                     </div>
                 </div>
+
+                <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:50px"><i class='fas fa-address-card' style='font-size:36px'></i></div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="position" type="text" placeholder="ตำแหน่ง" value="<?php echo $position; ?>" />
+                    </div>
+                </div>
+
+                <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="name" type="text" placeholder="ชื่อ" value="<?php echo $name; ?>" />
+                    </div>
+                </div>
+
+                <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="lastname" type="text" placeholder="นามสกุล" value="<?php echo $lastname; ?>" />
+                    </div>
+                </div>
+
+                <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:50px"><i class='fas fa-poll-h' style='font-size:36px'></i></div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="department" type="text" placeholder="แผนก" value="<?php echo $department; ?>" />
+                    </div>
+                </div>
+
+                <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:50px"><i class='fas fa-clone' style='font-size:36px'></i></div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="role" type="role" placeholder="บทบาทหน้าที่" value="<?php echo $role; ?>" />
+                    </div>
+                </div>
+
+                <div class="w3-row w3-section">
+                    <div class="w3-col" style="width:50px"><i class="fa fa-file-picture-o" style="font-size:36px"></i></div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="image" type="file" value="<?php echo $image; ?>" />
+                    </div>
+                </div>
+
+                <p class="w3-center">
+                    <input type="submit" name="submit" value="Upload" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="reset" value="Cancel" />
+                </p>
         </form>
 
     <?php } ?>

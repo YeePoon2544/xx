@@ -26,5 +26,5 @@ if (!empty($_FILES['image']['tmp_name'])) {
 
 ?>
 <script type="text/javascript">
-    window.location = "indexname.php";
+    window.location = "../admin.php";
 </script>
