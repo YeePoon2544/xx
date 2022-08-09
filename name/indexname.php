@@ -53,10 +53,7 @@
 <body>
 
     <br>
-    <div align="center">
-        <img src="../images/ปก1.png" style="width:30%;">
-    </div>
-    <!-- <h1 align='center'>ข้อมูลรายชื่อคณะกรรมการสัมพันธ์</h1> -->
+    <h1 align='center'>ข้อมูลรายชื่อคณะกรรมการสัมพันธ์</h1>
     <a href="name/createname.php"><button type="button" class="btn btn-primary">เพิ่มข้อมูลรายชื่อคณะกรรมการสัมพันธ์</button></a> <br>
 
 </body>

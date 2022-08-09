@@ -15,11 +15,9 @@ if ($Menu == "1") {
 } else if ($Menu == "2") {
   $selected2 = "class='selected'";
   if ($Submenu == "news2") {
-    $Fileshow = "news2.html";
-  } else if ($Submenu == "meet") {
-    $Fileshow = "meet.php";
+    $Fileshow = "news2.php";
   } else if ($Submenu == "appointment") {
-    $Fileshow = "appointment.html";
+    $Fileshow = "appointment.php";
   }
 
 } else if ($Menu == "3") {
@@ -31,12 +29,12 @@ if ($Menu == "1") {
 } else if ($Menu == "4") {
   $selected4 = "class='selected'";
   if ($Submenu == "law") {
-    $Fileshow = "law.html";
+    $Fileshow = "law.php";
   } else if ($Submenu == "imperative") {
-    $Fileshow = "imperative.html";
+    $Fileshow = "imperative.php";
   }
   else if ($Submenu == "labor") {
-    $Fileshow = "labor.html";
+    $Fileshow = "labor.php";
   }
 }
 
@@ -50,7 +48,7 @@ else if ($Menu == "5") {
 }
 
 else{
-  $Fileshow = "news2.html";
+  $Fileshow = "news2.php";
 }
 ?>
 <!DOCTYPE html>
