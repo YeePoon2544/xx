@@ -48,7 +48,7 @@
 </style>
 <boby>
     <h1>ระเบียบและข้อบังคับของ วว.</h1><br>
-    <a href="imperative/createimperative.php"><button type="button" class="btn btn-primary">เพิ่มข้อมูลระเบียบและข้อบังคับของ วว.</button></a> <br>
+    <a href="admin.php?Menu=4&Submenu=createimperative"><button type="button" class="btn btn-primary">เพิ่มข้อมูลระเบียบและข้อบังคับของ วว.</button></a> <br>
 </boby>
 <?php
 
@@ -78,7 +78,7 @@ $data = mssql_query("SELECT * FROM imperative");
             <td><?php echo $image; ?></td>
             <td><?php echo $details; ?></td>
             <td><?php echo $filename; ?></td>
-            <td><a href='imperative/editimperative.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
+            <td><a href='admin.php?Menu=4&Submenu=editimperative&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
             <td><a href='imperative/deleteimperative.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger">delete</button></a></td>
         </tr>
     <?php } ?>

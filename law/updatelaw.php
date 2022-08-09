@@ -38,5 +38,5 @@ if(!empty($_FILES['filename']['tmp_name'])){
 ?>
 
 <script type="text/javascript">
-    window.location = "../admin.php";
+    window.location = "../admin.php?Menu=3&Submenu=indexlaw";
 </script>

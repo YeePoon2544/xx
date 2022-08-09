@@ -1,3 +1,4 @@
+
 <?php
 $image = iconv("utf-8", "tis-620", $_FILES['image']['name']);
 $filename = iconv("utf-8", "tis-620", $_FILES['filename']['name']);
@@ -19,5 +20,5 @@ move_uploaded_file($tmp_name,"../uploads/".$_FILES['filename']['name']);
 ?>
 
 <script type="text/javascript">
-    window.location = "../admin.php";
+    window.location = "../admin.php?Menu=3&Submenu=indexlaw";
 </script>

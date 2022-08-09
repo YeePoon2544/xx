@@ -57,7 +57,7 @@
 <body>
     <br>
     <h1>แผนการประชุมคณะกรรมการกิจการสัมพันธ์ ประจำปีงบประมาณ 2565</h1><br>
-    <a href="appointment/createappointment.php"><button type="button" class="btn btn-primary">เพิ่มข้อมูลแผนการประชุมคณะกรรมการกิจการสัมพันธ์</button></a><br>
+    <a href="admin.php?Menu=2&Submenu=createappointment"><button type="button" class="btn btn-primary">เพิ่มข้อมูลแผนการประชุมคณะกรรมการกิจการสัมพันธ์</button></a><br>
     
 </body>
 <?php
@@ -106,7 +106,7 @@ $data = mssql_query("SELECT * FROM appointment");
             <td><?php echo $send; ?></td>
             <td><?php echo $location; ?></td>
             <td><?php echo $note; ?></td>
-            <td><a href='appointment/editappointment.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
+            <td><a href='admin.php?Menu=2&Submenu=editappointment&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
             <td><a href='appointment/deleteappointment.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger">delete</button></a></td>
         </tr>
     <?php } ?>

@@ -12,5 +12,5 @@ $sql = "DELETE FROM meet WHERE ID = '$ID'";
 
 ?>
 <script type="text/javascript">
-    window.location = "../admin.php";
+    window.location = "../admin.php?Menu=2&Submenu=index";
 </script>

@@ -12,5 +12,5 @@ $sql = "DELETE FROM appointment WHERE ID = '$ID'";
 
 ?>
 <script type="text/javascript">
-    window.location = "../admin.php";
+    window.location = "../admin.php?Menu=2&Submenu=indexappointment";
 </script>

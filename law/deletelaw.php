@@ -11,6 +11,7 @@ $sql = "DELETE FROM law WHERE ID = '$ID'";
 
 
 ?>
+
 <script type="text/javascript">
-    window.location = "../admin.php";
+    window.location = "../admin.php?Menu=3&Submenu=indexlaw";
 </script>

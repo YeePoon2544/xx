@@ -54,7 +54,7 @@
 
     <br>
     <h1 align='center'>ข้อมูลรายชื่อคณะกรรมการสัมพันธ์</h1>
-    <a href="name/createname.php"><button type="button" class="btn btn-primary">เพิ่มข้อมูลรายชื่อคณะกรรมการสัมพันธ์</button></a> <br>
+    <a href="admin.php?Menu=1&Submenu=createname"><button type="button" class="btn btn-primary">เพิ่มข้อมูลรายชื่อคณะกรรมการสัมพันธ์</button></a> <br>
 
 </body>
 
@@ -95,7 +95,7 @@ $data = mssql_query("SELECT * FROM about");
             <td><?php echo $lastname; ?></td>
             <td><?php echo $department; ?></td>
             <td><?php echo $role; ?></td>
-            <td><a href='name/editname.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
+            <td><a href='admin.php?Menu=1&Submenu=editname&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
             <td><a href='name/deletename.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger">delete</button></a></td>
         </tr>
     <?php } ?>

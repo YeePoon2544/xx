@@ -48,7 +48,7 @@
 <body>
     <h1 align='center'>ข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</h1>
     <br>
-    <a href="labor/createlabor.php"><button type="button" class="btn btn-primary">เพิ่มข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</button></a>
+    <a href="admin.php?Menu=3&Submenu=createlabor"><button type="button" class="btn btn-primary">เพิ่มข้อมูลพระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</button></a>
     <br>
 </body>
 
@@ -76,7 +76,7 @@ $data = mssql_query("SELECT * FROM labor");
             <td><?php echo $image; ?></td>
             <td><?php echo $details; ?></td>
             <td><?php echo $filename; ?></td>
-            <td><a href='labor/editlabor.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
+            <td><a href='admin.php?Menu=3&Submenu=editlabor&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
             <td><a href='labor/deletelabor.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger">delete</button></a></td>
         </tr>
     <?php } ?>
