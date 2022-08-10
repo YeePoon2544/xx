@@ -39,13 +39,14 @@
         margin-left: 10px;
         margin-top: 40px;
         padding: 7px;
-        width: 35%;
+        width: 40%;
         margin: 0 auto;
         font-size: 22px;
     }
 </style>
 
 <body>
+<br>
     <h1>ข้อมูลเกี่ยวกับกฏหมายแรงงานรัฐวิสาหกิจ</h1> <br>
     <a href="admin.php?Menu=3&Submenu=createlaw"><button type="button" class="btn btn-primary">เพิ่มข้อมูลกฏหมายแรงงานรัฐวิสาหกิจ</button></a> <br>
 

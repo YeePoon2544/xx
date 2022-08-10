@@ -44,6 +44,7 @@
     }
 </style>
 <boby>
+<br>
     <h1>คำถาม คำตอบ</h1><br>
 </boby>
 <?php
@@ -53,7 +54,7 @@ $data = mssql_query("SELECT * FROM qa");
 
 ?>
 <table class="table table-bordered" align="center" width=65% border=1 cellpadding=4>
-    <tr align="center" bgcolor="DarkSalmon">
+    <tr align="center">
         <th>รหัส</th>
         <th>คำถาม</th>
         <th>คำตอบ</th>
@@ -69,7 +70,7 @@ $data = mssql_query("SELECT * FROM qa");
             <td><?php echo $info['ID']; ?></td>
             <td><?php echo $question; ?></td>
             <td><?php echo $answer; ?></td>
-            <td><a href='qa/editqa.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-success">คำตอบ</button></a></td>
+            <td><a href='admin.php?Menu=5&Submenu=editqa&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-success">คำตอบ</button></a></td>
         </tr>
     <?php } ?>
 </table>

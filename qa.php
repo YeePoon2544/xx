@@ -1,18 +1,13 @@
-<?php 
-
+<?php
+$data = mssql_query("SELECT * FROM qa ");
 
 ?>
-
-
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      font-family: 'K2D', sans-serif;
-    }
-
+  
     input[type=text],
     select,
     textarea {
@@ -44,7 +39,7 @@
       background-color: #dde0f2;
       padding: 20px;
 
-      background: linear-gradient(to top, #f0ffff 15%, #ffffff 100%);
+      background: linear-gradient(to top, #F3D6CE 15%, #ffffff 100%);
     }
 
     .centered {
@@ -95,35 +90,43 @@
 
   <form action="./qa/storeqa.php" method="POST">
 
-
-
     <div class="container">
       <h3 class="centered">ถาม-ตอบ Q&A</h3><br>
       <label for="text">คำถาม</label>
       <input type="text" name="question" placeholder="พิมพ์คำถาม...">
       <input type="submit" value="ส่ง">
     </div>
+
     <div>
-      <table class="tb">
-        <tr>
-          <td class="td1">คำถาม :<a class="a1">สมมุติ</a>
-            <hr width="95%">
-            <div class="ddiv">
-              <p>ถามเมื่อ:06/07/2565</p>
+      <? while ($info = mssql_fetch_array($data)) {
+        $question = iconv("tis-620", "utf-8", $info['Question']);
+        $answer = iconv("tis-620", "utf-8", $info['Answer']);
+        $day = iconv("tis-620", "utf-8", $info['Day']);
+        $dayout = iconv("tis-620", "utf-8", $info['Dayout']);
+      ?>
+        <table class="tb">
 
-            </div>
-          </td>
-        </tr>
 
-        <tr>
-          <td class="td3">คำตอบ :<a class="a1"></a>
-            <hr width="95%">
-            <div class="ddiv">
-              <p>ตอบเมื่อ:06/07/2565</p>
+          <tr>
+            <td class="td1">คำถาม : <a class="a1"><?php echo  $question; ?></a>
+              <hr width="95%">
+              <div class="ddiv">
+                <p>ถามเมื่อ : <a class="a1"><?php echo  $day; ?></p>
 
-            </div>
-          </td>
-        </tr>
-      </table>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="td3">คำตอบ : <a class="a1"><?php echo  $answer; ?></a>
+              <hr width="95%">
+              <div class="ddiv">
+                <p>ตอบเมื่อ : <a class="a1"><?php echo  $dayout; ?></p>
+
+              </div>
+            </td>
+          </tr>
+        </table>
+      <?php } ?>
     </div>
 </body>

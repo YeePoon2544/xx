@@ -45,6 +45,7 @@
 </style>
 
 <body>
+<br>
     <h1 align='center'>ข้อมูลข่าวสาร</h1>
     <a href="admin.php?Menu=1&Submenu=createnews2"><button type="button" class="btn btn-primary">เพิ่มข้อมูลข่าวสาร</button></a> <br>
 </body>

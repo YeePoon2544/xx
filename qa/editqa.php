@@ -58,7 +58,7 @@ $data = mssql_query("SELECT * FROM qa WHERE ID='$ID'")
         $question = iconv("tis-620", "utf-8", $info['Question']);
         $answer = iconv("tis-620", "utf-8", $info['Answer']);
     ?>
-        <form action="updateqa.php?ID=<?php echo $info['ID']; ?>" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">
+        <form action="qa/updateqa.php?ID=<?php echo $info['ID']; ?>" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">
             <div align="center">
                 <h2>ตอบคำถาม</h2>
 

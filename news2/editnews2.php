@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>แก้ไขข้อมูลข้อมูลข่าวสาร</title>
+    <title>แก้ไขข้อมูลข่าวสาร</title>
 </head>
 
 <?php
@@ -65,7 +65,7 @@ $data = mssql_query("SELECT * FROM news WHERE ID={$ID}")
     ?>
 
         <form action="news2/updatenews2.php?ID=<?php echo $info['ID']; ?>" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">
-            <h2 class="w3-center">แก้ไขข้อมูลข้อมูลข่าวสาร</h2>
+            <h2 class="w3-center">แก้ไขข้อมูลข่าวสาร</h2>
 
             <div class="w3-row w3-section">
                 <div class="w3-col" style="width:50px"><i class='fas fa-edit' style='font-size:36px'></i></div>

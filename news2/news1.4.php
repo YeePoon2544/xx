@@ -44,7 +44,7 @@
     <br>
 
     <div class="container">
-        <img src="../images/22.jpg" alt="news" style="width:100%;">
+        <img src="../images/sa.jpg" alt="news" style="width:100%;">
         <div class="content">
             <h1>ครั้งที่ 4/2565</h1>
             <p>ผู้เข้าร่วมประชุมคณะกรรมการกิจการสัมพันธ์ ครั้งที่ 4/2565</p>

@@ -44,7 +44,7 @@
     <br>
 
     <div class="container">
-        <img src="../images/22.jpg" alt="news" style="width:100%;">
+        <img src="../images/bb.webp" alt="news" style="width:50%;">
         <div class="content">
             <h1>วันอังคารที่ 9 พฤศจิกายน 2564</h1>
             <p>ผู้เข้าร่วมประชุมคณะกรรมการกิจการสัมพันธ์ ครั้งที่ 2/2565 </p>

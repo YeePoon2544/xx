@@ -1,3 +1,11 @@
+<?php 
+$sql        = "SELECT *FROM appointment WHERE Type ='1'";
+$result     = $db_tm->sql_query($sql);
+$rows       = $db_tm->sql_fetchrow($result);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -153,62 +161,62 @@
           title          : "ประชุมครั้งที่ 1",
           start          : new Date(y-1, m+3, 19),
           allDay: true,
-          backgroundColor: '#f39c12', //yellow
-          borderColor    : '#f39c12' //yellow
+          backgroundColor: '#FCEE9E', //yellow
+          borderColor    : '#FCEE9E' //yellow
         },
         
       {
           title          : "ประชุมครั้งที่ 2",
           start          : new Date(y-1, m+4 , 9 ),
           allDay         : true,
-          backgroundColor: '#0073b7', //Blue
-          borderColor    : '#0073b7' //Blue
+          backgroundColor: '#E0C7EE', //Blue
+          borderColor    : '#E0C7EE' //Blue
         },
 
       {
           title          : "ประชุมครั้ง ที่ 3",
           start          : new Date(y, m-5, 8),
           allDay         : true,
-          backgroundColor: '#00a65a', //Primary (light-blue)
-          borderColor    : '#00a65a' //Primary (light-blue)
+          backgroundColor: '#80B7A2', //Primary (light-blue)
+          borderColor    : '#80B7A2' //Primary (light-blue)
         },
 
       {
           title          : "ประชุมครั้ง ที่ 4",
           start          : new Date(y, m-4, 15),
           allDay         : true,
-          backgroundColor: '#f56954', //Primary (light-blue)
-          borderColor    : '#f56954' //Primary (light-blue)
+          backgroundColor: '#7F867B', //Primary (light-blue)
+          borderColor    : '#7F867B' //Primary (light-blue)
         },
       {
           title          : "ประชุมครั้ง ที่ 5",
           start          : new Date(y, m-3, 19),
           allDay         : true,
-          backgroundColor: '#3c8dbc', //Primary (light-blue)
-          borderColor    : '#3c8dbc' //Primary (light-blue)
+          backgroundColor: '#B5B1C8', //Primary (light-blue)
+          borderColor    : '#B5B1C8' //Primary (light-blue)
         },
 
       {
           title          : "ประชุมครั้งที่ 6",
           start          : new Date(y, m-2, 17),
           allDay         : true,
-          backgroundColor: '#00a65a', //Success (green)
-          borderColor    : '#00a65a' //Success (green)
+          backgroundColor: '#E6C2BF', //Success (green)
+          borderColor    : '#E6C2BF' //Success (green)
         },
 
       {
           title          : "ประชุมครั้งที่ 7",
           start          : new Date(y, m-1, 14),
           allDay         : true,
-          backgroundColor: '#00c0ef', //Info (aqua)
-          borderColor    : '#00c0ef' //Info (aqua)
+          backgroundColor: '#B5B1C8', //Info (aqua)
+          borderColor    : '#B5B1C8' //Info (aqua)
        },
 
         {
           title          : "ประชุมครั้งที่ 8",
           start          : new Date(y, m, 12),
-          backgroundColor: "#f56954", //red
-          borderColor    : "#f56954", //red
+          backgroundColor: "#293242", //red
+          borderColor    : "#293242", //red
           allDay         : true,
            },
 
@@ -216,16 +224,16 @@
           title          : "ประชุมครั้งที่ 9",
           start          : new Date(y, m+1, 16),
           allDay         : true,
-          backgroundColor: '#f39c12', //yellow
-          borderColor    : '#f39c12' //yellow
+          backgroundColor: '#75464A', //yellow
+          borderColor    : '#75464A' //yellow
         },
 
         {
           title          : "ประชุมครั้งที่ 10",
           start          : new Date(y, m+2 , 13 ),
           allDay         : true,
-          backgroundColor: '#0073b7', //Blue
-          borderColor    : '#0073b7' //Blue
+          backgroundColor: '#E8ABB5', //Blue
+          borderColor    : '#E8ABB5' //Blue
         },
 
       ],

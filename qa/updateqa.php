@@ -27,5 +27,5 @@ $objQuery = mssql_query($sql);
 ?>
 
 <script type="text/javascript">
-    window.location = "../admin.php";
+    window.location = "../admin.php?Menu=5&Submenu=indexqa";
 </script>

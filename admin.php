@@ -17,6 +17,7 @@ if ($Menu == "1") {
     } else if ($Submenu == "editnews2") {
         $Fileshow = "news2/editnews2.php";
     }
+
 } else if ($Menu == "2") {
     $selected2 = "class='selected'";
     if ($Submenu == "indexappointment") {
@@ -32,6 +33,7 @@ if ($Menu == "1") {
     } else if ($Submenu == "edit") {
         $Fileshow = "meet/edit.php";
     }
+
 } else if ($Menu == "3") {
     $selected3 = "class='selected'";
     if ($Submenu == "indexlabor") {
@@ -47,6 +49,7 @@ if ($Menu == "1") {
     } else if ($Submenu == "editlabor") {
         $Fileshow = "labor/editlabor.php";
     }
+
 } else if ($Menu == "4") {
     $selected4 = "class='selected'";
     if ($Submenu == "indeximperative") {
@@ -56,15 +59,17 @@ if ($Menu == "1") {
     } else if ($Submenu == "editimperative") {
         $Fileshow = "imperative/editimperative.php";
     }
+    
 } else if ($Menu == "5") {
     $selected4 = "class='selected'";
     if ($Submenu == "indexcomment") {
         $Fileshow = "comment/indexcomment.php";
     } else if ($Submenu == "indexqa") {
         $Fileshow = "qa/indexqa.php";
-    } else if ($Submenu == "createqa") {
-        $Fileshow = "qa/createqa.php";
+    } else if ($Submenu == "editqa") {
+        $Fileshow = "qa/editqa.php";
     }
+
 } else {
     $Fileshow = "welcome.php";
 }

@@ -9,7 +9,7 @@ if ($Menu == "1") {
   if ($Submenu == "name") {
     $Fileshow = "name.php";
   } else if ($Submenu == "role") {
-    $Fileshow = "role.html";
+    $Fileshow = "role.php";
   }
   
 } else if ($Menu == "2") {

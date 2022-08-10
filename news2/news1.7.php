@@ -44,7 +44,7 @@
     <br>
 
     <div class="container">
-        <img src="../images/22.jpg" alt="news" style="width:100%;">
+        <img src="../images/aasa.jpg" alt="news" style="width:100%;">
         <div class="content">
             <h1>วันอังคารที่ 14 มิถุนายน 2565</h1>
             <p>ผู้เข้าร่วมประชุมคณะกรรมการกิจการสัมพันธ์ ครั้งที่ 7/2565 </p>

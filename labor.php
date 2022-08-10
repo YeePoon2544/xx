@@ -2,7 +2,8 @@
 $sql        = "SELECT *FROM labor WHERE ID ='1'";
 $result     = $db_tm->sql_query($sql);
 $rows       = $db_tm->sql_fetchrow($result);
-
+$image      = $rows['Image'];
+$path       = '../xx/images/';
 
 
 echo "</tables>";
@@ -16,6 +17,7 @@ echo "</tables>";
 <head>
   <meta charset="UTF-8">
   <title>พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 </head>
 <style>
@@ -71,9 +73,9 @@ echo "</tables>";
   <div class="row">
     <div class="column left">
 
-      <div align="center"><img class="zoom" src="images/mm.png" id="myImg" style="width:20%;max-width:100px aling-center "></div><br>
+      <div align="center"><img class="zoom" src= "<? echo $path . $image; ?>" id="myImg" style="width:20%;max-width:100px aling-center "></div><br>
       <text><? echo iconv("tis-620", "utf-8", $rows['Details']);?><text><br>
-          <a href="pdf1/พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์  พ.ศ. 2543.pdf" download/Download File>Download</a>
+          <a href="pdf1/พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์  พ.ศ. 2543.pdf" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a>
     </div>
   </div>
 </body>

@@ -51,7 +51,6 @@
 </style>
 
 <body>
-
     <br>
     <h1 align='center'>ข้อมูลรายชื่อคณะกรรมการสัมพันธ์</h1>
     <a href="admin.php?Menu=1&Submenu=createname"><button type="button" class="btn btn-primary">เพิ่มข้อมูลรายชื่อคณะกรรมการสัมพันธ์</button></a> <br>
