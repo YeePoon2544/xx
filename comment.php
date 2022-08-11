@@ -1,70 +1,75 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/style1.css" type="text/css">
-  <style>
-
-    input[type=text],
-    select,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid rgb(64, 170, 216);
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-    }
-
-    input[type=submit] {
-      background-color: #fa4848f7;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-      background-color: #49c31d;
-    }
-
-    .container {
-      border-radius: 5px;
-      background-color: #dde0f2;
-      padding: 20px;
-
-      background: linear-gradient(to top, #f0ffff 15%, #ffffff 100%);
-    }
-
-    .centered {
-      text-align: center;
-      width: 30%;
-      height: 4%;
-      border: double 5px rgb(241, 160, 160);
-      border-radius: 5px;
-    }
-
-    .bodydy {
-      justify-content: center;
-      display: flex;
-      background-color: rgb(236, 236, 236);
-    }
-  </style>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
+<style>
+  body {
+    font-size: 17px;
+  }
 
-<body class="bodydy">
-  <form action="./comment/storecomment.php" method="post">
+  input[type=submit] {
+    background-color: #fa4848f7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-    <div class="container">
-      <h3 class="centered">ยื่นข้อร้องเรียน</h3><br>
-      <label for="text">เรื่อง</label>
-      <input type="text" name="subject" placeholder="เรื่อง..">
-      <label for="text">ข้อร้องเรียน</label>
-      <textarea type="text" name="story" placeholder="เขียนอะไรบางอย่าง.." style="height:200px"></textarea>
+  input[type=submit]:hover {
+    background-color: #49c31d;
+  }
 
-      <input type="submit" value="ส่ง">
+  input[type=reset] {
+    background-color: #787A79;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=reset]:hover {
+    background-color: #656C5C;
+  }
+</style>
+
+<body>
+
+  <form action="./comment/storecomment.php" method="post" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+    <h2 class="w3-center">ยื่นข้อร้องเรียน</h2>
+
+    <h3>เรื่อง</h3>
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class='fas fa-bullhorn' style='font-size:36px'></i></div>
+
+      <div class="w3-rest">
+        <input class="w3-input w3-border" name="subject" type="text" placeholder="เรื่อง...">
+      </div>
     </div>
+
+    <h3>ข้อร้องเรียน</h3>
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class='fas fa-pen-nib' style='font-size:36px'></i></div>
+
+      <div class="w3-rest">
+        <input class="w3-input w3-border" type="text" name="story" placeholder="เขียนอะไรบางอย่าง...">
+      </div>
+    </div>
+
+    <p class="w3-center">
+      <input type="submit" name="submit" value="ส่ง" />&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="reset" name="submit" value="ยกเลิก" />
+
+    </p>
+  </form>
+
 </body>
+
+</html>

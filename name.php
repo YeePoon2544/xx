@@ -94,6 +94,7 @@ echo "</tables>";
 
 <meta charset="UTF-8">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 <style>
   img {
 
@@ -321,8 +322,8 @@ echo "</tables>";
       <tr>
         <td width="30%">
           <h4>คำสั่งเเต่งตั้งคณะกรรมการกิจการสัมพันธ์</h4>
-          <a href="pdf4/คำสั่งคณะกรรมการสถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย.pdf" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i>
-        </td></a>
+          <button type="button" class="btn btn-outline-primary"><a href="pdf4/คำสั่งคณะกรรมการสถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย.pdf" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i>
+        </a></td>
       </tr>
 
 </body>

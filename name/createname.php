@@ -42,9 +42,6 @@
         background-color: #656C5C;
     }
 </style>
-
-<a href="indexname.php">ย้อนกลับ</a>
-
 <body>
     <br>
     <form action="name/storename.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">

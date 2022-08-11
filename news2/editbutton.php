@@ -15,9 +15,8 @@
 
 
   <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
+  <input type="submit" name="submit" value="Upload"  class="btn btn-success" data-toggle="modal" data-target="#myModal">
+  </input>
 
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
@@ -29,7 +28,7 @@
           <h4 class="modal-title">คุณต้องการแก้ไขข้อมูลหรือไหม?</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        
+
         <!-- Modal footer -->
         <div class="modal-footer">
         <input type="submit" name="submit" value="ใช่"  class="btn btn-success" data-dismiss="modal"></input>&nbsp;&nbsp;&nbsp;&nbsp;

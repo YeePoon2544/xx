@@ -505,7 +505,7 @@ table tbody tr {
     }
 
 table th {
-    color: #4a4a4a;
+    text-align: center;
 }
 
 ul.table-pagination {

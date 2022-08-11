@@ -56,7 +56,7 @@
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px"><i class='far fa-calendar-alt' style='font-size:36px'></i></div>
             <div class="w3-rest">
-                <input class="w3-input w3-border" name="day" type="day" placeholder="วว/ดด/ปป ข่าวสาร">
+                <input class="w3-input w3-border" name="day" type="day" placeholder="วว/ดด/ปป ของข่าวสาร">
             </div>
         </div>
 

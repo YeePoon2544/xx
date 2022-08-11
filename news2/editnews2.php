@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>แก้ไขข้อมูลข่าวสาร</title>
 </head>
 
@@ -101,11 +104,37 @@ $data = mssql_query("SELECT * FROM news WHERE ID={$ID}")
                 </div>
             </div>
 
-            <p class="w3-center">
-                <input type="submit" name="submit" value="Upload" />&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="reset" name="submit" value="Cancel" />
-            </p>
+            <!-- <p class="w3-center"> -->
+            <div class="container">
 
+
+                <!-- Button to Open the Modal -->
+                <input type="submit" name="submit" value="Upload" data-toggle="modal" data-target="#myModal">
+                </input>
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="submit" value="Cancel" />
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">คุณต้องการแก้ไขข้อมูลหรือไหม?</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <input type="submit" name="submit" value="ใช่" class="btn btn-success" data-dismiss="modal"></input>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="reset" name="submit" value="ไม่" class="btn btn-danger" data-dismiss="modal"></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
         </form>
         </div>
     <?php } ?>

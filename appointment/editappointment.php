@@ -72,7 +72,7 @@ $data = mssql_query("SELECT * FROM appointment WHERE ID={$ID}")
                 <div class="w3-row w3-section">
                     <div class="w3-col" style="width:50px"><i class='fas fa-edit' style='font-size:36px'></i></div>
                     <div class="w3-rest">
-                        <input class="w3-input w3-border" name="id" value="<?php echo $ID; ?>" />
+                        <input class="w3-input w3-border" name="id"  value="<?php echo $ID; ?>" />
                     </div>
                 </div>
 

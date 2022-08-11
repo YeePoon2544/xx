@@ -106,22 +106,22 @@ echo "</tables>";
     <div class="column left">
       <div align="center"><img class="zoom" src="<? echo $path . $image; ?>" id="myImg" style="width:20%;max-width:100px aling-center "></div><br>
       <text><? echo iconv("tis-620", "utf-8", $rows['Details']);?><text><br>
-          <a href="pdf2/ยกเลิกประกาศครรส.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a>
+      <button type="button" class="btn btn-outline-primary"><a href="pdf2/ยกเลิกประกาศครรส.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a></button>
           <br><br>
           <div align="center"><img class="zoom" src="<? echo $path2 . $image2; ?>" id="myImg" style="width:20%;max-width:100px aling-center "></div><br>
           <text><? echo iconv("tis-620", "utf-8", $rows2['Details']);?><text><br>
-              <a href="pdf2/ค่ารักษาพยาบาล.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a>
+          <button type="button" class="btn btn-outline-primary"><a href="pdf2/ค่ารักษาพยาบาล.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a></button>
     </div>
 
     <div class="column right">
       <div align="center"><img class="zoom" src="<? echo $path3 . $image3; ?>" id="myImg" style="width:20%;max-width:100px aling-center "></div><br>
       <text><? echo iconv("tis-620", "utf-8", $rows3['Details']);?><text><br>
-          <a href="pdf2/ค่าช่วยเหลือบุตร.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a>
+      <button type="button" class="btn btn-outline-primary"><a href="pdf2/ค่าช่วยเหลือบุตร.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a></button>
           <br><br><br><br>
           <div align="center"><img class="zoom" src="<? echo $path4 . $image4; ?>" id="myImg" style="width:20%;max-width:100px aling-center "></div><br>
           <text><? echo iconv("tis-620", "utf-8", $rows4['Details']);?>
             <text><br>
-              <a href="pdf2/ค่ารักษาโควิด.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a>
+            <button type="button" class="btn btn-outline-primary"><a href="pdf2/ค่ารักษาโควิด.PDF" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i></a></button>
     </div>
   </div>
 </body>
