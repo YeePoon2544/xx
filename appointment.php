@@ -25,36 +25,14 @@ $rows       = $db_tm->sql_fetchrow($result);
   <link rel="stylesheet" href="css/stylenews.css" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 
   <style>
-    .columnnn {
-      float: left;
-      width: 40%;
-      padding: 8px;
-      text-align: center;
-      border-radius: 20px;
-      /* border:double 5px rgb(243, 172, 206); */
-    }
+    body {
+      font-family: 'Prompt', sans-serif;
 
-    .container-fluid {
-      justify-content: center;
-      margin: 0 auto;
-    }
-
-    #calendar {
-      color: rgb(44, 17, 77);
-      background-color: #FFFAFA;
-      width: 100%;
-      height: auto;
-    }
-
-    .card-body p-0 {
-      justify-content: center;
-
-    }
-
-    .col-md-9 {
-      margin-left: 150px;
     }
   </style>
 </head>

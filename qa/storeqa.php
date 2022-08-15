@@ -3,11 +3,12 @@
 $answer = iconv("utf-8", "tis-620", $_POST['answer']);
 $question = iconv("utf-8", "tis-620", $_POST['question']);
 
+$dayout = date("Y-m-d");
 $objDB = mssql_select_db("work1");
 $strSQL = "INSERT INTO qa";
 $strSQL .= "(answer,question,day)";
 $strSQL .= "VALUES";
-$strSQL .= "('" . $answer . "','" . $question . "',GETDATE())";
+$strSQL .= "('" . $answer . "','" . $question . "','" . $dayout . "')";
 $strSQL .= mssql_query($strSQL);
 
 ?>

@@ -11,7 +11,6 @@ if ($Menu == "1") {
   } else if ($Submenu == "role") {
     $Fileshow = "role.php";
   }
-  
 } else if ($Menu == "2") {
   $selected2 = "class='selected'";
   if ($Submenu == "news2") {
@@ -19,35 +18,28 @@ if ($Menu == "1") {
   } else if ($Submenu == "appointment") {
     $Fileshow = "appointment.php";
   }
-
 } else if ($Menu == "3") {
   $selected3 = "class='selected'";
   if ($Submenu == "meet") {
     $Fileshow = "meet.php";
-  } 
-
+  }
 } else if ($Menu == "4") {
   $selected4 = "class='selected'";
   if ($Submenu == "law") {
     $Fileshow = "law.php";
   } else if ($Submenu == "imperative") {
     $Fileshow = "imperative.php";
-  }
-  else if ($Submenu == "labor") {
+  } else if ($Submenu == "labor") {
     $Fileshow = "labor.php";
   }
-}
-
-else if ($Menu == "5") {
+} else if ($Menu == "5") {
   $selected4 = "class='selected'";
   if ($Submenu == "comment") {
     $Fileshow = "comment.php";
   } else if ($Submenu == "qa") {
     $Fileshow = "qa.php";
   }
-}
-
-else{
+} else {
   $Fileshow = "news2.php";
 }
 ?>
@@ -61,6 +53,10 @@ else{
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+
 
   <title>คณะกรรมการกิจการสัมพันธ์</title>
 
@@ -76,9 +72,13 @@ https://templatemo.com/tm-529-ramayana
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
- 
-</head>
 
+</head>
+<style>
+  li{
+    font-family: 'Prompt', sans-serif;
+  }
+</style>
 <body class="is-preload">
 
   <!-- Wrapper -->
@@ -99,7 +99,7 @@ https://templatemo.com/tm-529-ramayana
           <?
           include($Fileshow);
           ?>
-       
+
         </div>
       </div>
     </div>
@@ -133,11 +133,11 @@ https://templatemo.com/tm-529-ramayana
                 <li><a class="sub-menu" onclick="location.href='index.php?Menu=2&Submenu=appointment';">ตารางการประชุม</a></li>
               </ul>
             </li>
-        
-              <ul>
-                <li><a class="sub-menu" onclick="location.href='index.php?Menu=3&Submenu=meet';">รายงานการประชุมคณะกรรมการกิจการสัมพันธ์</a></li>
-              </ul>
-      
+
+            <ul>
+              <li><a class="sub-menu" onclick="location.href='index.php?Menu=3&Submenu=meet';">รายงานการประชุมคณะกรรมการกิจการสัมพันธ์</a></li>
+            </ul>
+
             <li>
               <span class="opener">รวมกฎหมายแรงงานรัฐวิสาหกิจ</span>
               <ul>
@@ -146,7 +146,7 @@ https://templatemo.com/tm-529-ramayana
                 <li><a class="sub-menu" onclick="location.href='index.php?Menu=4&Submenu=imperative';">ระเบียบหรือข้อบังคับ วว. </a></li>
               </ul>
             </li>
-            
+
             <li>
               <span class="opener">ยื่นข้อร้องเรียน/Q&A</span>
               <ul>
@@ -154,13 +154,13 @@ https://templatemo.com/tm-529-ramayana
                 <li><a class="sub-menu" onclick="location.href='index.php?Menu=5&Submenu=qa';">Q&A</a></li>
               </ul>
             </li>
-         
+
           </ul>
         </nav>
       </div>
     </div>
   </div>
-  
+
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->

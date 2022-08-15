@@ -94,8 +94,16 @@ echo "</tables>";
 
 <meta charset="UTF-8">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 
 <style>
+  body {
+    font-family: 'Prompt', sans-serif;
+
+  }
+
   img {
 
     height: 150px;
@@ -120,7 +128,7 @@ echo "</tables>";
 <body>
   <table align="center" cellpadding="2" width="700">
     <tr align="center">
-      <td><img src="<? echo $path . $image; ?>" ></td>
+      <td><img src="<? echo $path . $image; ?>"></td>
     </tr>
     <tr align="center">
       <td><? echo iconv("tis-620", "utf-8", $rows['Name']);
@@ -142,8 +150,8 @@ echo "</tables>";
 
 
     <tr align="center">
-      <td width="50%"><img src="<? echo $path2 . $image2; ?>" ></td>
-      <td width="50%"><img src="<? echo $path3 . $image3; ?>" ></td>
+      <td width="50%"><img src="<? echo $path2 . $image2; ?>"></td>
+      <td width="50%"><img src="<? echo $path3 . $image3; ?>"></td>
     </tr>
 
     <tr align="center">
@@ -172,8 +180,8 @@ echo "</tables>";
     </tr>
 
     <tr align="center">
-      <td width="50%"><img src="<? echo $path4 . $image4; ?>" ></td>
-      <td width="50%"><img src="<? echo $path5 . $image5; ?>" ></td>
+      <td width="50%"><img src="<? echo $path4 . $image4; ?>"></td>
+      <td width="50%"><img src="<? echo $path5 . $image5; ?>"></td>
     </tr>
 
     <tr align="center">
@@ -201,8 +209,8 @@ echo "</tables>";
 
     </tr>
     <tr align="center">
-      <td width="50%"><img src="<? echo $path6 . $image6; ?>" ></td>
-      <td width="50%"><img src="<? echo $path7 . $image7; ?>" ></td>
+      <td width="50%"><img src="<? echo $path6 . $image6; ?>"></td>
+      <td width="50%"><img src="<? echo $path7 . $image7; ?>"></td>
     </tr>
 
     <tr align="center">
@@ -235,8 +243,8 @@ echo "</tables>";
     </tr>
 
     <tr align="center">
-      <td width="50%"><img src="<? echo $path8 . $image8; ?>" ></td>
-      <td width="50%"><img src="<? echo $path9 . $image9; ?>" ></td>
+      <td width="50%"><img src="<? echo $path8 . $image8; ?>"></td>
+      <td width="50%"><img src="<? echo $path9 . $image9; ?>"></td>
     </tr>
 
     <tr align="center">
@@ -265,8 +273,8 @@ echo "</tables>";
     </tr>
 
     <tr align="center">
-      <td width="50%"><img src="<? echo $path10 . $image10; ?>" ></td>
-      <td width="50%"><img src="<? echo $path11 . $image11; ?>" ></td>
+      <td width="50%"><img src="<? echo $path10 . $image10; ?>"></td>
+      <td width="50%"><img src="<? echo $path11 . $image11; ?>"></td>
     </tr>
 
     <tr align="center">
@@ -289,8 +297,8 @@ echo "</tables>";
 
     </tr>
     <tr align="center">
-      <td width="50%"><img src="<? echo $path12 . $image12; ?>" ></td>
-      <td width="50%"><img src="<? echo $path13 . $image13; ?>" ></td>
+      <td width="50%"><img src="<? echo $path12 . $image12; ?>"></td>
+      <td width="50%"><img src="<? echo $path13 . $image13; ?>"></td>
     </tr>
 
     <tr align="center">
@@ -323,7 +331,8 @@ echo "</tables>";
         <td width="30%">
           <h4>คำสั่งเเต่งตั้งคณะกรรมการกิจการสัมพันธ์</h4>
           <button type="button" class="btn btn-outline-primary"><a href="pdf4/คำสั่งคณะกรรมการสถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย.pdf" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i>
-        </a></td>
+            </a>
+        </td>
       </tr>
 
 </body>

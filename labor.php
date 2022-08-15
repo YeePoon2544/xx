@@ -18,9 +18,17 @@ echo "</tables>";
   <meta charset="UTF-8">
   <title>พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</title>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <style>
+  body {
+    font-family: 'Prompt', sans-serif;
+
+  }
+
   text {
     /* font-family: EkkamaiNew; */
     font-size: 18px;
