@@ -12,7 +12,7 @@ $note = iconv("utf-8", "tis-620", $_POST['note']);
 
 
 $objDB = mssql_select_db("work1");
-$strSQL = "INSERT INTO appointment";
+$strSQL = "INSERT INTO appointment ";
 $strSQL .= "(meetmonth,appointment,date,time,day,invite,send,location,note)";
 $strSQL .= "VALUES";
 $strSQL .= "('" . $meetmonth . "','" . $appointment . "','" . $date . "','" . $time . "',

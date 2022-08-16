@@ -65,6 +65,7 @@ $data = mssql_query("SELECT * FROM qa");
     <tr align="center">
         <th>รหัส</th>
         <th>คำถาม</th>
+        <th>วันที่ถาม</th>
         <th>คำตอบ</th>
         <th>ตอบกลับ</th>
     </tr>
@@ -73,10 +74,12 @@ $data = mssql_query("SELECT * FROM qa");
     while ($info = mssql_fetch_array($data)) {
         $question = iconv("tis-620", "utf-8", $info['Question']);
         $answer = iconv("tis-620", "utf-8", $info['Answer']);
+        $day = iconv("tis-620", "utf-8", $info['Day']);
     ?>
         <tr align="center">
             <td><?php echo $info['ID']; ?></td>
             <td><?php echo $question; ?></td>
+            <td><?php echo $day; ?></td>
             <td><?php echo $answer; ?></td>
             <td><a href='admin.php?Menu=5&Submenu=editqa&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-success">คำตอบ</button></a></td>
         </tr>

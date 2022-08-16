@@ -18,7 +18,7 @@ $dayout= iconv("utf-8", "tis-620", $_POST['dayout'],GETDATE());
 // echo $_FILES['image']['name']."<br>";
 // echo $_FILES['filename']['name']."<br>";
 $dayout=date("Y-m-d");
-$sql = ("UPDATE qa SET Answer='{$answer}', dayout='$dayout' WHERE ID={$ID}");
+$sql = ("UPDATE qa SET Answer='{$answer}', dayout='$dayout', Status='1' WHERE ID={$ID}");
 
 // echo $sql."<br>";
 $objQuery = mssql_query($sql);

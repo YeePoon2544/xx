@@ -61,7 +61,7 @@
 <?php
 
 $objDB = mssql_select_db("work1");
-$data = mssql_query("SELECT * FROM imperative");
+$data = mssql_query("SELECT * FROM imperative where status='1'");
 
 ?>
 <table class="table table-bordered" align="center" width=65% border=1 cellpadding=4>
