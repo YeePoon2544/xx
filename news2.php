@@ -1,148 +1,134 @@
-<?php
-
+<?
 $sql        = "SELECT *FROM news WHERE ID ='1'";
 $result     = $db_tm->sql_query($sql);
 $rows       = $db_tm->sql_fetchrow($result);
-$image      = $rows['Image'];
-$path       = '../xx/images/';
 
 $sql2        = "SELECT *FROM news WHERE ID ='2'";
 $result2     = $db_tm->sql_query($sql2);
 $rows2       = $db_tm->sql_fetchrow($result2);
-$image2      = $rows2['Image'];
-$path2       = '../xx/images/';
+$numrows2    = $db_tm->sql_numrows($result2);
 
-$sql3        = "SELECT *FROM news WHERE ID ='3'";
+$sql3       = "SELECT *FROM news WHERE ID ='3'";
 $result3     = $db_tm->sql_query($sql3);
 $rows3       = $db_tm->sql_fetchrow($result3);
-$image3      = $rows3['Image'];
-$path3       = '../xx/images/';
+$numrows3    = $db_tm->sql_numrows($result3);
 
 $sql4        = "SELECT *FROM news WHERE ID ='4'";
 $result4     = $db_tm->sql_query($sql4);
 $rows4       = $db_tm->sql_fetchrow($result4);
-$image4      = $rows4['Image'];
-$path4       = '../xx/images/';
+$numrows4    = $db_tm->sql_numrows($result4);
 
 $sql5        = "SELECT *FROM news WHERE ID ='5'";
 $result5     = $db_tm->sql_query($sql5);
 $rows5       = $db_tm->sql_fetchrow($result5);
-$image5      = $rows5['Image'];
-$path5       = '../xx/images/';
+$numrows5    = $db_tm->sql_numrows($result5);
 
 $sql6        = "SELECT *FROM news WHERE ID ='6'";
-$result6    = $db_tm->sql_query($sql6);
+$result6     = $db_tm->sql_query($sql6);
 $rows6       = $db_tm->sql_fetchrow($result6);
-$image6      = $rows6['Image'];
-$path6       = '../xx/images/';
+$numrows6    = $db_tm->sql_numrows($result6);
 
 $sql7        = "SELECT *FROM news WHERE ID ='7'";
-$result7    = $db_tm->sql_query($sql7);
+$result7     = $db_tm->sql_query($sql7);
 $rows7       = $db_tm->sql_fetchrow($result7);
-$image7      = $rows7['Image'];
-$path7       = '../xx/images/';
+$numrows7    = $db_tm->sql_numrows($result7);
 
+echo "</tables>";
 ?>
-<!DOCTYPE html>
-<html>
-
 <head>
-    <meta charset="UTF-8" />
-    <title>ข่าวสาร</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-
-</head>
+  <meta charset="UTF-8" />
+</head> 
 <style>
-    body {
-        font-family: 'Prompt', sans-serif;
-
-    }
-    
-</style>
-
+/* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    /* height: 300px;  */
+    /* Should be removed. Only for demonstration */
+  }
+  
+  .left {
+    width: 33.3%;
+    font-size: 14px;
+  }
+  
+  .right {
+    width: 33.3%;
+    font-size: 14px;
+    box-shadow: 10px chartreuse;
+  }
+  .center{
+    width: 33.3%;
+    font-size: 14px;
+  }
+#myImg {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s; 
+box-shadow:0 0 30px rgb(241, 227, 187);
+width :60%;
+max-width:300px ;
+}
+#myImg:hover {opacity: 0.7;}
+#href{
+text-align: center;
+    font-size: 12px;
+}
+/* mouse over link */
+a:hover {
+  color: #263e81;
+}
+.aa{
+  color: #808080;
+}
+  </style>    
+   
 <body>
 
-    <div class="w3-row-padding w3-margin-top">
 
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="<? echo $path . $image; ?>" style="width:100%">
-                <div class="w3-container">
-                    <h7><b><a href="news2/news1.php"><? echo iconv("tis-620", "utf-8", $rows['News']); ?></a></b></h7><br><br>
-                    <i class="fa fa-calendar-o"> </i> <? echo iconv("tis-620", "utf-8", $rows['Day']); ?></a>
-                </div>
-            </div>
-        </div>
+  <div class="row">
+    
+    <div class="column left" >
+      <div align="center"><img src="../xx/images/n1 (2).png"  id="myImg"  ></div>
+      <br><br>
+      <b><a href="index.php?Menu=2&Submenu=news1"><? echo iconv("tis-620", "utf-8", $rows['News']);?></a></b><br>
+      <i class="fa fa-calendar-o"></i><? echo iconv("tis-620", "utf-8", $rows['Day']);?></a>
+      <br><br><br>
 
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="<? echo $path2 . $image2; ?>" style="width:100%">
-                <div class="w3-container">
-                    <h7><b><a href="news2/news1.2.php"><? echo iconv("tis-620", "utf-8", $rows2['News']); ?></a></b></h7><br><br>
-                    <i class="fa fa-calendar-o"> </i> <? echo iconv("tis-620", "utf-8", $rows2['Day']); ?></a>
-                </div>
-            </div>
-        </div>
+      <div align="center"><img src="../xx/images/n4.png" id="myImg" ></div><br><br>
+      <b><a href="index.php?Menu=2&Submenu=news1.4"><? echo iconv("tis-620", "utf-8", $rows4['News']);?></a></b><br>
+      <i class="fa fa-calendar-o"></i><? echo iconv("tis-620", "utf-8", $rows4['Day']);?></a>
+      <br><br><br>
 
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="<? echo $path3 . $image3; ?>" style="width:100%">
-                <div class="w3-container">
-                    <h7><b><a href="news2/news1.3.php"><? echo iconv("tis-620", "utf-8", $rows3['News']); ?></a></b></h7><br><br>
-                    <i class="fa fa-calendar-o"> </i> <? echo iconv("tis-620", "utf-8", $rows3['Day']); ?></a>
-                </div>
-            </div>
-        </div>
-
+      <div align="center"><img src="../xx/images/ss.png" id="myImg" ></div><br><br>
+      <b><a href="index.php?Menu=2&Submenu=news1.7"><? echo iconv("tis-620", "utf-8", $rows7['News']);?></a></b><br>
+      <i class="fa fa-calendar-o"></i><? echo iconv("tis-620", "utf-8", $rows7['Day']);?></a>
     </div>
-    <div class="w3-row-padding w3-margin-top">
 
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="<? echo $path4 . $image4; ?>" style="width:100%">
-                <div class="w3-container">
-                    <h7><b><a href="news2/news1.4.php"><? echo iconv("tis-620", "utf-8", $rows4['News']); ?></a></b></h7><br><br>
-                    <i class="fa fa-calendar-o"> </i> <? echo iconv("tis-620", "utf-8", $rows4['Day']); ?></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="<? echo $path5 . $image5; ?>" style="width:100%">
-                <div class="w3-container">
-                    <h7><b><a href="news2/news1.5.php"><? echo iconv("tis-620", "utf-8", $rows5['News']); ?></a></b></h7><br><br>
-                    <i class="fa fa-calendar-o"> </i> <? echo iconv("tis-620", "utf-8", $rows5['Day']); ?></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="<? echo $path6 . $image6; ?>" style="width:100%">
-                <div class="w3-container">
-                    <h7><b><a href="news2/news1.6.php"><? echo iconv("tis-620", "utf-8", $rows6['News']); ?></a></b></h7><br><br>
-                    <i class="fa fa-calendar-o"> </i> <? echo iconv("tis-620", "utf-8", $rows6['Day']); ?></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-third w3-row-padding w3-margin-top">
-            <div class="w3-card">
-                <img src="<? echo $path7 . $image7; ?>" style="width:100%">
-                <div class="w3-container">
-                    <h7><b><a href="news2/news1.7.php"><? echo iconv("tis-620", "utf-8", $rows7['News']); ?></a></b></h7><br><br>
-                    <i class="fa fa-calendar-o"> </i> <? echo iconv("tis-620", "utf-8", $rows7['Day']); ?></a>
-                </div>
-            </div>
-        </div>
-
+    <div class="column right" >
+    <div align="center"><img src="../xx/images/n2.png" id="myImg" ></div><br><br>
+      <b><a href="index.php?Menu=2&Submenu=news1.2"><? echo iconv("tis-620", "utf-8", $rows2['News']);?></a></b><br>
+      <i class="fa fa-calendar-o"></i><? echo iconv("tis-620", "utf-8", $rows2['Day']);?></a>
+      <br><br><br>
+      <div align="center"><img src="../xx/images/n3 (2).png" id="myImg" ></div><br><br>
+      <b><a href="index.php?Menu=2&Submenu=news1.5"><? echo iconv("tis-620", "utf-8", $rows5['News']);?></a></b><br>
+      <i class="fa fa-calendar-o"></i><? echo iconv("tis-620", "utf-8", $rows5['Day']);?></a>
     </div>
+
+    <div class="column center">
+    <div align="center"><img src="../xx/images/n3.png" id="myImg"></div><br><br>
+      <b><a href="index.php?Menu=2&Submenu=news1.3"><? echo iconv("tis-620", "utf-8", $rows3['News']);?></a></b><br>
+      <i class="fa fa-calendar-o"></i><? echo iconv("tis-620", "utf-8", $rows3['Day']);?></a>
+      <br><br><br>
+      <div align="center"><img src="../xx/images/n6.png" id="myImg"></div><br><br>
+      <b><a href="index.php?Menu=2&Submenu=news1.6"><? echo iconv("tis-620", "utf-8", $rows6['News']);?></a></b><br>
+      <i class="fa fa-calendar-o"></i><? echo iconv("tis-620", "utf-8", $rows6['Day']);?></a>
+      <br><br><br>
+    </div>
+
+
+
+
+  </div>
 
 </body>
-
-</html>

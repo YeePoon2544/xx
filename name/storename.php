@@ -2,7 +2,7 @@
 
 $position = iconv("utf-8", "tis-620", $_POST['position']);
 $name = iconv("utf-8", "tis-620", $_POST['name']);
-$lastname = iconv("utf-8", "tis-620", $_POST['Lastname']);
+$lastname = iconv("utf-8", "tis-620", $_POST['lastname']);
 $department = iconv("utf-8", "tis-620", $_POST['department']);
 $role = iconv("utf-8", "tis-620", $_POST['role']);
 
@@ -11,7 +11,6 @@ $tmp_name = $_FILES['image']['tmp_name'];
 
 
 // echo $details."<br>";
- 
 // echo $day."<br>";
 // echo $_FILES['image']['tmp_name']."<br>";
 // echo $_FILES['image']['name']."<br>";
@@ -19,10 +18,12 @@ $tmp_name = $_FILES['image']['tmp_name'];
 
 $objDB = mssql_select_db("work1");
 $strSQL = "INSERT INTO about ";
-$strSQL .= "(Image,Position,Name,Lastname,Department,Role)";
+
+$strSQL .= "(Image,Position,Name,Lastname,Department,Role,Status)";
 $strSQL .= "VALUES";
-$strSQL .= "('" . $image . "','" . $position . "','" . $name  . "','" . $lastname . "','" . $department . "','" . $role . "')";
+$strSQL .= "('" . $image . "','" . $position . "','" . $name  . "','" . $lastname . "','" . $department . "','" . $role . "','1')";
 $objQuery = mssql_query($strSQL);
+
 
 //upload file in folder
 move_uploaded_file($tmp_name, "../uploads/" . $_FILES['image']['name']);
@@ -30,5 +31,5 @@ move_uploaded_file($tmp_name, "../uploads/" . $_FILES['image']['name']);
 ?>
 
 <script type="text/javascript">
-    window.location = "../admin.php?Menu=1&Submenu=indexname";
+     window.location = "../admin.php?Menu=1&Submenu=indexname";
 </script>
