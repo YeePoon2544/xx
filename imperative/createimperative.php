@@ -83,8 +83,8 @@
         </div>
 
         <p class="w3-center">
-            <input type="submit" name="submit" value="Sbmit" />&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="reset" name="reset" value="Cancel" />
+            <input type="submit" name="submit" value="Submit" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" name="cancle" value="Cancel" />
         </p>
     </form>
 </body>

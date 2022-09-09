@@ -123,8 +123,8 @@ if ($Menu == "1") {
             <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location. href='admin.php?Menu=2&Submenu=index';">ข้อมูลรายงานการประชุม</a>
             <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location. href='admin.php?Menu=3&Submenu=indexlabor';">ข้อมูลพระราชบัญญัติ</a>
             <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location.href='admin.php?Menu=3&Submenu=indexlaw';">ข้อมูลกฎหมายแรงงานรัฐวิสาหกิจ</a>
-            <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location.href='admin.php?Menu=4&Submenu=indeximperative';">ข้อมูลระเบียบ วว.</a>
-            <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location.href='admin.php?Menu=5&Submenu=indexcomment';">ข้อมูลร้องเรียน</a>
+            <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location.href='admin.php?Menu=4&Submenu=indeximperative';">ข้อมูลข้อบังคับหรือระเบียบ วว.</a>
+            <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location.href='admin.php?Menu=5&Submenu=indexcomment';">ข้อมูลยื่นร้องเรียน</a>
             <a class="sub-menu w3-bar-item w3-button w3-hover-white" onclick="location.href='admin.php?Menu=5&Submenu=indexqa';">ข้อมูลถามตอบ</a>
 
         </div>

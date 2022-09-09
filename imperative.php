@@ -11,20 +11,21 @@ echo "</tables>";
 <head>
   <meta charset="UTF-8">
   <title>ระเบียบและข้อบังคับของ วว</title>
+  <meta charset="UTF-8">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 </head>
 <script>
-    var loadFile = function(event) {
-        var reader = new FileReader();
-        reader.onload = function() {
-            var output = document.getElementById('showimg');
-            output.src = reader.result;
-        };
-        reader.readAsDataURL(event.target.files[0]);
+  var loadFile = function(event) {
+    var reader = new FileReader();
+    reader.onload = function() {
+      var output = document.getElementById('showimg');
+      output.src = reader.result;
     };
+    reader.readAsDataURL(event.target.files[0]);
+  };
 </script>
 <style>
   body {
@@ -105,11 +106,19 @@ echo "</tables>";
     margin-bottom: 25px;
     background-color: #EBECE7;
     text-align: center;
+    border-radius: 25px 25px 25px 25px;
+  }
+
+  .nm {
+    width: 600px;
+    height: 130px;
+    margin-left: 18%;
+    border-radius: 65px 65px 65px 65px;
   }
 </style>
 
 <body>
-  <h1>ระเบียบและข้อบังคับของ วว.</h1>
+  <img class="nm" src="./images/ข้อบังคับ.png"><br><br>
   <br><br>
   <? while ($info = mssql_fetch_array($data)) {
     $details = iconv("tis-620", "utf-8", $info['Details']);
@@ -127,7 +136,7 @@ echo "</tables>";
 
 
         <p><? echo $details ?></p>
-        <br><button type="button" class="btn "><a href="uploads/<?php echo $filename ?>" download/Download File>Download </a>
+        <br><button type="button" class="btn "><a href="uploads/<?php echo $filename ?>" download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i>
           </a>
           </p>
       </div>

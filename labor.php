@@ -21,14 +21,14 @@ echo "</tables>";
 
 </head>
 <script>
-    var loadFile = function(event) {
-        var reader = new FileReader();
-        reader.onload = function() {
-            var output = document.getElementById('showimg');
-            output.src = reader.result;
-        };
-        reader.readAsDataURL(event.target.files[0]);
+  var loadFile = function(event) {
+    var reader = new FileReader();
+    reader.onload = function() {
+      var output = document.getElementById('showimg');
+      output.src = reader.result;
     };
+    reader.readAsDataURL(event.target.files[0]);
+  };
 </script>
 <style>
   body {
@@ -88,10 +88,18 @@ echo "</tables>";
     background-color: #EBECE7;
     text-align: center;
   }
+
+  .nm {
+    width: 600px;
+    height: 130px;
+    margin-left: 25%;
+    border-radius: 65px 65px 65px 65px;
+  }
 </style>
 
 <body>
-  <h1>พระราชบัญญัติแรงงานรัฐวิสาหกิจสัมพันธ์</h1><br>
+  <img class="nm" src="./images/พระราชบัญญัติ.png"><br><br>
+  <br><br>
   <? while ($info = mssql_fetch_array($data)) {
     $details = iconv("tis-620", "utf-8", $info['Details']);
     $image = iconv("tis-620", "utf-8", $info['Image']);
@@ -108,7 +116,7 @@ echo "</tables>";
 
 
         <p><? echo $details ?></p>
-        <br><button type="button" class="btn "><a href="uploads/<?php echo $filename ?>" download/Download File>Download </a>
+        <br><button type="button" class="btn "><a href="uploads/<?php echo $filename ?>"download/Download File><i class='far fa-hand-point-right' style='font-size:16px'></i> Download <i class='far fa-hand-point-left' style='font-size:16px'></i>
           </a>
           </p>
       </div>

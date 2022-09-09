@@ -17,27 +17,8 @@ if ($Menu == "1") {
     $Fileshow = "news2.php";
   } else if ($Submenu == "calender") {
     $Fileshow = "fullcalendar/calender.php";
-  }
-  else if ($Submenu == "news1") {
-    $Fileshow = "news2/news1.php";
-  }
-  else if ($Submenu == "news1.2") {
-    $Fileshow = "news2/news1.2.php";
-  }
-  else if ($Submenu == "news1.3") {
-    $Fileshow = "news2/news1.3.php";
-  }
-  else if ($Submenu == "news1.4") {
-    $Fileshow = "news2/news1.4.php";
-  }
-  else if ($Submenu == "news1.5") {
-    $Fileshow = "news2/news1.5.php";
-  }
-  else if ($Submenu == "news1.6") {
-    $Fileshow = "news2/news1.6.php";
-  }
-  else if ($Submenu == "news1.7") {
-    $Fileshow = "news2/news1.7.php";
+  } else if ($Submenu == "newsmain") {
+    $Fileshow = "news2/newsmain.php";
   }
 } else if ($Menu == "3") {
   $selected3 = "class='selected'";
@@ -96,10 +77,11 @@ https://templatemo.com/tm-529-ramayana
 
 </head>
 <style>
-  li{
+  li {
     font-family: 'Prompt', sans-serif;
   }
 </style>
+
 <body class="is-preload">
 
   <!-- Wrapper -->

@@ -78,15 +78,22 @@
     text-align: center;
   }
 
-  h3{
+  h3 {
     font-family: 'Prompt', sans-serif;
+  }
+
+  .nm {
+    width: 600px;
+    height: 130px;
+    margin-left: 18%;
+    border-radius: 65px 65px 65px 65px;
   }
 </style>
 </head>
 
 <body>
 
-  <h2>ยื่นข้อร้องเรียน</h2>
+  <img class="nm" src="./images/ยื่นข้อร้องเรียน.png"><br><br>
 
 
   <div class="container">
@@ -113,7 +120,7 @@
 
       <div class="aa">
         <input type="submit" name="submit" value="ส่ง" />&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="reset" name="submit" value="ยกเลิก" />
+        <input type="reset" name="cancle" value="ยกเลิก" />
       </div>
     </form>
   </div>
