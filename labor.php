@@ -81,8 +81,8 @@ echo "</tables>";
     padding-right: 15px;
     /* border: solid 1px black; */
     padding: 10px 15px;
-    margin-right: 100px;
-    margin-left: 120px;
+    margin-right: 80px;
+    margin-left: 83px;
     color: #000;
     margin-bottom: 35px;
     background-color: #EBECE7;
@@ -92,7 +92,7 @@ echo "</tables>";
   .nm {
     width: 600px;
     height: 130px;
-    margin-left: 25%;
+    margin-left: 18%;
     border-radius: 65px 65px 65px 65px;
   }
 </style>

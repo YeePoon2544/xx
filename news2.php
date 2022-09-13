@@ -20,7 +20,7 @@ echo "</tables>";
     margin-right: 20px;
     color: #000;
     background-color: white;
-    margin-bottom: 35px;
+    margin-bottom: 35px;  
 
   }
 </style>
@@ -45,8 +45,8 @@ echo "</tables>";
         </center><br>
 
         <p class="p1"><? echo $header ?><br>
-          <i class="fa fa-calendar-o"></i><? echo $day ?>
-          <br><a button id="myBtn" href="index.php?Menu=2&Submenu=newsmain&ID=<?php echo $info['ID']; ?>"><span>อ่านต่อ </span>
+          <i class="fa fa-calendar-o"></i> <? echo $day ?>
+          <br><a button id="myBtn" href="index.php?Menu=2&Submenu=newsmain&ID=<?php echo $info['ID']; ?>"><span> อ่านต่อ </span>
           </a>
         </p>
       </div>

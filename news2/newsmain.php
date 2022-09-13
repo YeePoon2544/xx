@@ -19,7 +19,6 @@
         body {
             font-family: 'Prompt', sans-serif;
             font-size: 17px;
-            font-family: 'Prompt', sans-serif;
         }
 
         .container {
@@ -69,7 +68,7 @@
     ?>
 
     <img class="nm" src="./images/ข่าวสาร.png">
-    <br>
+    <br> <br>
     <? while ($info = mssql_fetch_array($data)) {
         $details = iconv("tis-620", "utf-8", $info['Details']);
         $day = iconv("tis-620", "utf-8", $info['Day']);
@@ -78,7 +77,7 @@
     ?>
     <?php } ?>
     <div class="container">
-        <img src="uploads/<?php echo $image ?>" alt="news" style="width: 800px;; height:800px">
+        <img src="uploads/<?php echo $image ?>" alt="news" style="width: 800px; height:500px;">
         <div class="content">
             <h3><?php echo $details; ?></h3>
             <p><?php echo $day; ?></p>

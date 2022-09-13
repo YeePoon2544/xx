@@ -127,28 +127,8 @@ $data = mssql_query("SELECT * FROM news WHERE ID={$ID}")
                 <!-- Button to Open the Modal -->
                 <input type="submit" name="submit" value="Upload" data-toggle="modal" data-target="#myModal">
                 </input>
-                &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="submit" value="Cancel" />
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="cancle" value="Cancel" />
 
-                <!-- The Modal -->
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">คุณต้องการแก้ไขข้อมูลหรือไหม?</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <input type="submit" name="submit" value="ใช่" class="btn btn-success" data-dismiss="modal"></input>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type="reset" name="submit" value="ไม่" class="btn btn-danger" data-dismiss="modal"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
             <br>
         </form>
