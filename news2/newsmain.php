@@ -17,7 +17,6 @@
         }
 
         body {
-            font-family: Arial;
             font-size: 17px;
             font-family: 'Prompt', sans-serif;
         }
@@ -40,7 +39,7 @@
             background: rgba(0, 0, 0, 0.5);
             /* Black background with 0.5 opacity */
             color: #f1f1f1;
-            width: 100%;
+            width: 90%;
             padding: 20px;
         }
 
@@ -78,9 +77,9 @@
     ?>
     <?php } ?>
     <div class="container">
-        <img src="uploads/<?php echo $image; ?>" alt="news" style="width:100%;">
+        <img src="uploads/<?php echo $image; ?>" alt="news" style="width:94%;">
         <div class="content">
-            <h1><?php echo $news; ?></h1>
+            <h3><?php echo $news; ?></h3>
             <p><?php echo $day; ?></p>
         </div>
     </div>

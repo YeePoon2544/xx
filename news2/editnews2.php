@@ -119,8 +119,12 @@ $data = mssql_query("SELECT * FROM news WHERE ID={$ID}")
                 <div class="w3-col" style="width:50px"><i class='fas fa-book-reader' style='font-size:36px'></i></div>
                 <div class="w3-rest">
                     <input class="w3-input w3-border" name="news" type="text" placeholder="รายละเอียดข่าวสาร" value="<?php echo $news; ?>" />
-                </div>
-                <br>
+                </div><br>
+                
+                <p class="w3-center">
+                    <input type="submit" name="submit" value="Upload" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="cancle" value="Cancel" />
+                
         </form>
         </div>
     <?php } ?>

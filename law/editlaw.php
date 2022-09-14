@@ -126,6 +126,7 @@ $data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
             output.src = reader.result;
         };
         reader.readAsDataURL(event.target.files[0]);
-    }; <
-    /script <
-    /html>
+    };
+</script>
+
+</html>

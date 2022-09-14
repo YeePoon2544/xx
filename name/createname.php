@@ -87,7 +87,7 @@
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px"><i class='fas fa-poll-h' style='font-size:36px'></i></div>
             <div class="w3-rest">
-                <select name="department">
+                <select class="w3-input w3-border"  name="department">
                     <option value="-">แผนก</option>
                     <option value="ผู้แทนฝ่ายนายจ้าง">ผู้แทนฝ่ายนายจ้าง</option>
                     <option value="ผู้แทนฝ่ายลูกจ้าง">ผู้แทนฝ่ายลูกจ้าง</option>
