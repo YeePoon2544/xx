@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-<title>แก้ไขข้อมูลไฟล์งานการประชุม</title>
+    <title>แก้ไขข้อมูลไฟล์งานการประชุม</title>
 </head>
 <?php
 
@@ -26,7 +26,7 @@ $data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
 ?>
 
 <style>
- body{
+    body {
         font-family: 'Prompt', sans-serif;
 
     }
@@ -59,6 +59,7 @@ $data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
     input[type=reset]:hover {
         background-color: #656C5C;
     }
+
     h2,
     h5 {
         font-family: 'Prompt', sans-serif;
@@ -89,7 +90,8 @@ $data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
             <div class="w3-row w3-section">
                 <div class="w3-col" style="width:50px"><i class="fa fa-file-picture-o" style="font-size:36px"></i></div>
                 <div class="w3-rest">
-                    <input class="w3-input w3-border" name="image" type="file" value="<?php echo $image; ?>" />
+                    <input class="w3-input w3-border" type="file" name="image" onchange="loadFile(event)" /> <br>
+                    <img id="showimg" src="uploads/<?php echo $image; ?>" style="height:270px; width:200px;">
                 </div>
             </div>
 
@@ -116,5 +118,14 @@ $data = mssql_query("SELECT * FROM law WHERE ID={$ID}")
         </form>
     <?php } ?>
 </body>
-
-</html>
+<script>
+    var loadFile = function(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('showimg');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }; <
+    /script <
+    /html>

@@ -17,8 +17,9 @@
         }
 
         body {
-            font-family: 'Prompt', sans-serif;
+            font-family: Arial;
             font-size: 17px;
+            font-family: 'Prompt', sans-serif;
         }
 
         .container {
@@ -52,7 +53,7 @@
             color: #f1f1f1;
         }
 
-        .nm {
+        .mm {
             width: 600px;
             height: 140px;
             margin-left: 22%;
@@ -67,19 +68,19 @@
     $data = mssql_query("SELECT * FROM news WHERE ID={$ID}")
     ?>
 
-    <img class="nm" src="./images/ข่าวสาร.png">
-    <br> <br>
+    <img class="mm" src="./images/ข่าวสาร.png"><br><br>
+    <br>
     <? while ($info = mssql_fetch_array($data)) {
-        $details = iconv("tis-620", "utf-8", $info['Details']);
+        $news = iconv("tis-620", "utf-8", $info['News']);
         $day = iconv("tis-620", "utf-8", $info['Day']);
         $image = iconv("tis-620", "utf-8", $info['Image']);
 
     ?>
     <?php } ?>
     <div class="container">
-        <img src="uploads/<?php echo $image ?>" alt="news" style="width: 800px; height:500px;">
+        <img src="uploads/<?php echo $image; ?>" alt="news" style="width:100%;">
         <div class="content">
-            <h3><?php echo $details; ?></h3>
+            <h1><?php echo $news; ?></h1>
             <p><?php echo $day; ?></p>
         </div>
     </div>

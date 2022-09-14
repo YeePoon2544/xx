@@ -83,7 +83,7 @@ $data = mssql_query("SELECT * FROM labor");
     ?>
         <tr align="center">
             <td><?php echo $info['ID']; ?></td>
-            <td><?php echo $image; ?></td>
+            <td><?php echo $image ?></td>
             <td><?php echo $details; ?></td>
             <td><?php echo $filename; ?></td>
             <td><a href='admin.php?Menu=3&Submenu=editlabor&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
@@ -91,5 +91,4 @@ $data = mssql_query("SELECT * FROM labor");
         </tr>
     <?php } ?>
 </table>
-
 </html>

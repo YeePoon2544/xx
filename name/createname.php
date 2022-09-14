@@ -107,7 +107,8 @@
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px"><i class="fa fa-file-picture-o" style="font-size:36px"></i></div>
             <div class="w3-rest">
-                <input class="w3-input w3-border" name="image" type="file">
+                <input class="w3-input w3-border" type="file" name="image" onchange="loadFile(event)" /> <br>
+                <img id="showimg" src="uploads/<?php echo $image; ?>" style="height:270px; width:200px;">
             </div>
         </div>
 
@@ -118,5 +119,15 @@
     </form>
 
 </body>
+<script>
+    var loadFile = function(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('showimg');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+</script>
 
 </html>
