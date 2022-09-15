@@ -75,14 +75,6 @@
             </div>
         </div>
 
-        <h5>วันที่ประชุม</h5>
-        <div class="w3-row w3-section">
-            <div class="w3-col" style="width:50px"><i class='far fa-calendar-alt' style='font-size:36px'></i></div>
-            <div class="w3-rest">
-                <input class="w3-input w3-border" name="date" type="text" placeholder="วันที่ประชุม">
-            </div>
-        </div>
-
         <h5>เวลาประชุม</h5>
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px"><i class='far fa-clock' style='font-size:36px'></i></div>
@@ -123,6 +115,29 @@
             </div>
         </div>
 
+        <h5>วันที่</h5>
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class='fas fa-calendar-alt' style='font-size:36px'></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="dd" type="text" placeholder="วันที่">
+            </div>
+        </div>
+
+        <h5>เดือน</h5>
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class='fas fa-calendar-alt' style='font-size:36px'></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="mm" type="text" placeholder="เดือน">
+            </div>
+        </div>
+
+        <h5>ปีที่</h5>
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class='fas fa-calendar-alt' style='font-size:36px'></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="yy" type="text" placeholder="ปี">
+            </div>
+        </div>
         <h5>หมายเหตุ</h5>
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px"><i class='fas fa-bullhorn' style='font-size:36px'></i></div>
@@ -133,13 +148,13 @@
 
         <h5>รายละเอียดการประชุม</h5>
         <div class="w3-row w3-section">
-        <div class="w3-col" style="width:50px"><i class='fas fa-book-reader' style='font-size:36px'></i></div>
+            <div class="w3-col" style="width:50px"><i class='fas fa-book-reader' style='font-size:36px'></i></div>
             <div class="w3-rest">
                 <?
                 $data = mssql_query("SELECT * FROM news  ");
                 ?>
 
-                <select class="w3-input w3-border" style="width:400px"  name="ID_news">
+                <select class="w3-input w3-border" style="width:400px" name="ID_news">
 
                     <option selected="" value="">--- กรุณาเลือกข่าวสาร --- </option>
                     <?

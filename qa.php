@@ -143,7 +143,7 @@ $data = mssql_query("SELECT TOP 5 * from qa where status ='1' ORDER BY ID DESC "
             <hr width="95%">
             <div class="ddiv">
               <p>ถามเมื่อ : <a class="a1"><?php echo  $day; ?></p>
-
+              
             </div>
           </td>
         </tr>

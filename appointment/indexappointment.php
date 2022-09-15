@@ -72,24 +72,24 @@
 <?php
 
 $objDB = mssql_select_db("work1");
-$data = mssql_query("SELECT * FROM appointment where status='1' " );
+$data = mssql_query("SELECT * FROM appointment where status='1'" );
 
 ?>
 <table class="table table-bordered" align="center" width=65% border=1 cellpadding=4>
     <tr align="center" bgcolor="#F3D8D1">
         <th>รหัส</th>
         <th>ประชุมประจำเดือน</th>
-        <th>ครั้งที่</th>
+        <th>ครั้งที่</th> 
         <th>วันที่ประชุม</th>
+        <th>เดือนที่ประชุม</th>
+        <th>ปีที่ประชุม</th>
         <th>เวลาประชุม</th>
         <th>วันเสนอวาระ</th>
         <th>วันออกหนังสือเชิญ</th>
         <th>วันส่งเอกสารประชุม</th>
         <th>สถานที่ประชุม</th>
-        <th>วันที่ประชุม</th>
-        <th>เดือนที่ประชุม</th>
-        <th>ปีที่ประชุม</th>
         <th>หมายเหตุ</th>
+        <th>ข่าวสาร</th>
         <th>Edit</th>
         <th>Delete</td>
     </tr>
@@ -98,7 +98,6 @@ $data = mssql_query("SELECT * FROM appointment where status='1' " );
     while ($info = mssql_fetch_array($data)) {
         $meetmonth = iconv("tis-620", "utf-8", $info['Meetmonth']);
         $appointment = iconv("tis-620", "utf-8", $info['Appointment']);
-        $date = iconv("tis-620", "utf-8", $info['Date']);
         $time = iconv("tis-620", "utf-8", $info['Time']);
         $day = iconv("tis-620", "utf-8", $info['Day']);
         $invite = iconv("tis-620", "utf-8", $info['Invite']);
@@ -108,22 +107,29 @@ $data = mssql_query("SELECT * FROM appointment where status='1' " );
         $mm = iconv("tis-620", "utf-8", $info['MM']);
         $yy = iconv("tis-620", "utf-8", $info['YY']);
         $note = iconv("tis-620", "utf-8", $info['Note']);
+        $IDnews = iconv("tis-620", "utf-8", $info['ID_news']);
 
     ?>
         <tr align="center">
             <td><?php echo $info['ID']; ?></td>
             <td><?php echo $meetmonth; ?></td>
             <td><?php echo $appointment; ?></td>
-            <td><?php echo $date; ?></td>
+             <td><?php echo $dd ?></td>
+            <td><?php echo $mm ?></td>
+            <td><?php echo $yy ?></td>
             <td><?php echo $time; ?></td>
             <td><?php echo $day; ?></td>
             <td><?php echo $invite; ?></td>
             <td><?php echo $send; ?></td>
             <td><?php echo $location; ?></td>
-            <td><?php echo $dd ?></td>
-            <td><?php echo $mm ?></td>
-            <td><?php echo $yy ?></td>
             <td><?php echo $note; ?></td>
+            <td><?
+                        $result3 = mssql_query("SELECT * FROM news where ID='$IDnews'");
+                        //$result = mssql_query($data);
+                        $info3 = mssql_fetch_array($result3);
+                        echo iconv("TIS-620", "UTF-8", $info3["News"]);
+
+                        ?></td>
             <td><a href='admin.php?Menu=2&Submenu=editappointment&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
             <td><a href='appointment/deleteappointment.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger">delete</button></a></td>
         </tr>

@@ -105,14 +105,6 @@ $data = mssql_query("SELECT * FROM appointment WHERE ID={$ID}")
                 </div>
             </div>
 
-            <h5>วันที่ประชุม</h5>
-            <div class="w3-row w3-section">
-                <div class="w3-col" style="width:50px"><i class='far fa-calendar-alt' style='font-size:36px'></i></div>
-                <div class="w3-rest">
-                    <input class="w3-input w3-border" name="date" type="text" placeholder="วันที่ประชุม" value="<?php echo $date; ?>">
-                </div>
-            </div>
-
             <h5>เวลาประชุม</h5>
             <div class="w3-row w3-section">
                 <div class="w3-col" style="width:50px"><i class='far fa-clock' style='font-size:36px'></i></div>
@@ -195,7 +187,7 @@ $data = mssql_query("SELECT * FROM appointment WHERE ID={$ID}")
                    
 
                     <select select class="w3-input w3-border" style="width:400px" name="ID_news" id="id_ID" onchange="fm_ID_ID(this.value)">
-                        <option value="all">--กรุณาเลือก--</option>
+                        <option value="">--กรุณาเลือก--</option>
                         <?
                         $data2 = mssql_query("SELECT * FROM news");
 

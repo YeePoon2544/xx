@@ -84,7 +84,7 @@ $data = mssql_query("SELECT * FROM qa ");
                  <?
                 if ($info["Status"]=="") {
                     ?>
-                  <a href='admin.php?Menu=5&Submenu=createqa&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-success">คำตอบ</button></a>
+                  <a href='admin.php?Menu=5&Submenu=editqa&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-success">คำตอบ</button></a>
                  <?
                  }
                  ?>
