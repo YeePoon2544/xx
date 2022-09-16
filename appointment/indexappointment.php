@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>แผนการประชุมคณะกรรมการกิจการสัมพันธ์ ประจำปีงบประมาณ 2565</title>
 </head>
 <style>
@@ -32,7 +34,8 @@
     }
 
     .btn-primary {
-        margin-left: 75%;
+        margin-left: 89%;
+        font-size: 16px;
     }
 
     footer {
@@ -66,7 +69,7 @@
 <body>
     <br>
     <h1>แผนการประชุมคณะกรรมการกิจการสัมพันธ์ ประจำปีงบประมาณ 2565</h1><br>
-    <a href="admin.php?Menu=2&Submenu=createappointment"><button type="button" class="btn btn-primary">เพิ่มข้อมูลแผนการประชุมคณะกรรมการกิจการสัมพันธ์</button></a><br>
+    <a href="admin.php?Menu=2&Submenu=createappointment"><button type="button" class="btn btn-primary">เพิ่มข้อมูล <i class='fas fa-plus-circle' style='font-size:20px'></i></button></a> <br>
 
 </body>
 <?php
@@ -130,8 +133,8 @@ $data = mssql_query("SELECT * FROM appointment where status='1'" );
                         echo iconv("TIS-620", "UTF-8", $info3["News"]);
 
                         ?></td>
-            <td><a href='admin.php?Menu=2&Submenu=editappointment&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning">Edit</button></a></td>
-            <td><a href='appointment/deleteappointment.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger">delete</button></a></td>
+            <td><a href='admin.php?Menu=2&Submenu=editappointment&ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-warning"><i class='far fa-edit' style='font-size:22px'></i></button></a></td>
+            <td><a href='appointment/deleteappointment.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger"><i class='fas fa-eraser' style='font-size:22px'></i></button></a></td>
         </tr>
     <?php } ?>
 </table>

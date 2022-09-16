@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>คำขอร้องเรียน</title>
 </head>
 <style>
@@ -74,7 +76,7 @@ $data = mssql_query("SELECT * FROM comment");
             <td><?php echo $info['ID']; ?></td>
             <td><?php echo $subject; ?></td>
             <td><?php echo $story; ?></td>
-            <td><a href='comment/deletecomment.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger">delete</button></a></td>
+            <td><a href='comment/deletecomment.php?ID=<?php echo $info['ID']; ?>'><button type="button" class="btn btn-danger"><i class='fas fa-eraser' style='font-size:22px'></i></button></a></td>
         </tr>
     <?php } ?>
 </table>

@@ -25,7 +25,7 @@ $data = mssql_query("SELECT *FROM meet where status='1' ");
 // $result6     = $db_tm->sql_query($sql6);
 // $rows6       = $db_tm->sql_fetchrow($result6);
 // $numrows6    = $db_tm->sql_numrows($result6);
-
+// ข้างบนคือการดึงแบบตรงๆ
 
 
 echo "</tables>";
@@ -66,7 +66,6 @@ echo "</tables>";
     img {
         height: 150px;
         width: 100px;
-        /* box-shadow: 0 0 40px rgb(33, 65, 96); */
     }
 
     .zoom {

@@ -1,6 +1,5 @@
 <?
 
-
 $data = mssql_query("SELECT *FROM labor where status='1'");
 
 echo "</tables>";

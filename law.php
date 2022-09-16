@@ -90,7 +90,6 @@ echo "</tables>";
 
 <body>
   <img class="nm" src="./images/กฎหมายแรงงานรัฐวิสาหกิจที่เกี่ยวข้อง.png"><br><br>
-  <!-- <h1>กฎหมายแรงงานรัฐวิสาหกิจที่เกี่ยวข้อง</h1><br> -->
   <? while ($info = mssql_fetch_array($data)) {
     $details = iconv("tis-620", "utf-8", $info['Details']);
     $filename = iconv("tis-620", "utf-8", $info['Filename']);
