@@ -151,7 +151,7 @@
             <div class="w3-col" style="width:50px"><i class='fas fa-book-reader' style='font-size:36px'></i></div>
             <div class="w3-rest">
                 <?
-                $data = mssql_query("SELECT * FROM news  ");
+                $data = mssql_query("SELECT * FROM news ");
                 ?>
 
                 <select class="w3-input w3-border" style="width:400px" name="ID_news">

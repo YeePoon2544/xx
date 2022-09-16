@@ -97,7 +97,7 @@
 
 
   <div class="container">
-    <form action="./comment/storecomment.php" method="post" class="  w3-text-blue ">
+    <form action="./comment/storecomment.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
 
       <h3>เรื่อง</h3>
       <div class="w3-row w3-section">
@@ -122,6 +122,7 @@
         <input type="submit" name="submit" value="ส่ง" />&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="reset" name="cancle" value="ยกเลิก" />
       </div>
+      <br>
     </form>
   </div>
 
