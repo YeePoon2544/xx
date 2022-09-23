@@ -9,7 +9,10 @@ echo "</tables>";
 </head>
 <style>
   /* Create two unequal columns that floats next to each other */
-
+  body {
+        font-family: 'Prompt', sans-serif;
+    }
+    
   .box5 {
     width: 290px;
     min-height: 250px;

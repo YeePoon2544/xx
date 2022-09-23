@@ -186,7 +186,7 @@ $data = mssql_query("SELECT * FROM appointment WHERE ID={$ID}")
                 <div class="w3-rest">
                    
 
-                    <select select class="w3-input w3-border" style="width:400px" name="ID_news" id="id_ID" onchange="fm_ID_ID(this.value)">
+                    <select class="w3-input w3-border" style="width:400px" name="ID_news" id="id_ID" onchange="fm_ID_ID(this.value)">
                         <option value="">--กรุณาเลือก--</option>
                         <?
                         $data2 = mssql_query("SELECT * FROM news");

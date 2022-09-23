@@ -158,6 +158,10 @@ https://templatemo.com/tm-529-ramayana
               </ul>
             </li>
 
+            <ul>
+              <li><a class="sub-menu" onclick="location.href='';">กลับสู่หน้าหลัก HRIS</a></li>
+            </ul>
+
           </ul>
         </nav>
       </div>

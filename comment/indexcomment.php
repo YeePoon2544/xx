@@ -53,7 +53,7 @@
 
 <body>
     <br>
-    <h1 align='center'>คำขอร้องเรียน</h1>
+    <h1 align='center'>ข้อมูลยื่นคำขอร้องเรียน</h1>
     <br>
 </body>
 <?php

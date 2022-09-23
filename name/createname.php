@@ -85,15 +85,26 @@
 
         <h5>แผนก</h5>
         <div class="w3-row w3-section">
-            <div class="w3-col" style="width:50px"><i class='fas fa-poll-h' style='font-size:36px'></i></div>
-            <div class="w3-rest">
-                <select class="w3-input w3-border"  name="department">
-                    <option value="-">แผนก</option>
-                    <option value="ผู้แทนฝ่ายนายจ้าง">ผู้แทนฝ่ายนายจ้าง</option>
-                    <option value="ผู้แทนฝ่ายลูกจ้าง">ผู้แทนฝ่ายลูกจ้าง</option>
-                </select>
+                <div class="w3-col" style="width:50px"><i class='fas fa-poll-h' style='font-size:36px'></i></div>
+                <div class="w3-rest">
+                   
+
+                    <select class="w3-input w3-border" style="width:400px" name="department" id="id_department" onchange="fm_ID_department(this.value)">
+                        <option value="all">--- กรุณาเลือกแผนก ---</option>
+                        <?
+                        $data2 = mssql_query("SELECT * FROM department");
+
+                        while ($info2 = mssql_fetch_array($data2)) {
+                            $aa = "";
+                            if ($IDdepartment == $info2["ID"]) {
+                                $aa = "selected";
+                            }
+
+                            echo '<option value="' . $info2["ID"] . '"  ' . $aa . '>' . iconv("tis-620", "utf-8", $info2["Department"]) . '</option>';
+                        } ?>
+                    </select>
+                </div>
             </div>
-        </div>
 
         <h5>บทบาทหน้าที่</h5>
         <div class="w3-row w3-section">

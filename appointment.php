@@ -23,8 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Prompt', sans-serif;
-
+        font-family: 'Prompt', sans-serif;
     }
 
     .columnnn { 
